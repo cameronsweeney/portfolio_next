@@ -1,0 +1,242 @@
+
+.left_background {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(135deg, var(--color-main-1) 0 calc((25vh + 25vw) * 1.414), rgba(0,0,0,0) calc((25vh + 25vw) * 1.414)) no-repeat;
+  background-attachment: scroll;
+
+  overflow: hidden;
+  z-index: -3;
+}
+
+.right_background {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0 calc((25vh + 25vw) * 1.414), var(--color-main-2) calc((25vh + 25vw) * 1.414)) no-repeat;
+  background-attachment: scroll;
+
+  overflow: hidden;
+  z-index: -3;
+}
+
+
+/*******************************************/
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0 var(--measure-2) var(--measure-2) var(--measure-2);
+}
+
+/***** UpperLeft.css ****/
+
+
+.upper_left {
+  flex: 1 1 40%;
+
+  min-width: min(25rem, 90vw);
+  max-width: 35rem;
+  
+  margin: var(--measure-1);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.upper_left > div {
+  width: fit-content;
+
+  background-color: var(--color-main-p);
+  box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
+
+  padding-bottom: var(--measure-half);
+}
+
+.upper_left p {
+  font-size: var(--measure-2);
+  padding: var(--measure-half) var(--measure-1);
+  margin: 0;
+}
+
+/**** PhotoComponent.css ****/
+
+.photo {
+  flex: 1 1 40%;
+
+  min-width: 20rem;
+  max-width: 35rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  
+  margin: var(--measure-1);
+}
+
+.photo img {
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
+}
+
+/**** NavLinks.css ***/
+
+
+.home_links {
+  flex: 1 1 33%;
+  margin: 0 var(--measure-3) 0 var(--measure-3);
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_links {
+  flex: 1 1 45%;
+  padding: var(--measure-2);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  overflow-x: scroll;
+}
+
+.link_wrapper {
+  flex: 0 1 50%;
+
+  overflow: visible;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link_wrapper > div > div {
+  overflow: hidden;
+  position: relative;
+  display: block;
+
+  font-family: 'Lato', sans-serif;
+  font-size: var(--measure-2);
+
+  box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
+}
+
+
+.home_links .link_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.home_links > div {
+  position: relative;
+  margin: var(--measure-1);
+  display: flex;
+  flex-direction: row;
+}
+
+.home_links div div {
+  position: relative;
+  display: block;
+
+  font-family: 'Lato', sans-serif;
+  font-size: var(--measure-3);
+
+  padding: var(--measure-half);
+}
+
+.header_links div div {
+  padding: var(--measure-half);
+}
+
+.header_links span::before,
+.header_links div.link_icon::before,
+.home_links div:first-child span::before
+{
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: -230%;
+  height: 100%;
+  width: 350%;
+  transform: scale(1);
+  transform-origin: top left;
+  transition: transform .4s ease-out;
+  background: linear-gradient(135deg, var(--color-main-1) 0 50%, var(--color-header) 50% 100%);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.header_links span:hover::before,
+.header_links div.link_icon:hover::before,
+.home_links div:first-child span:hover::before
+{
+  transform: translateX(60%);
+}
+
+.header_links .link_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header_links .link_wrapper > :nth-child(n+2) {
+  padding-left: var(--measure-2);
+}
+
+.link_icon {
+  padding: 0 !important;
+  height: fit-content;
+}
+
+.link_icon img,
+.link_icon div,
+.link_icon svg,
+.link_img {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+}
+
+/*** LinkButton.css ***/
+
+/*** Header.css ***/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  overflow: visible;
+
+  margin: var(--measure-2) var(--measure-2) 0 var(--measure-2);
+}
+
+h1.header_h1 {
+  flex: 1 1 auto;
+
+  font-family: 'Lato', sans-serif;
+  font-size: var(--measure-4);
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.header h1 span {
+  background-color: var(--color-main-1);
+  margin-left: var(--measure-2);
+}

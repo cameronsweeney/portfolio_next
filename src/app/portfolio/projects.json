@@ -1,0 +1,42 @@
+[
+    {
+    "title": "Music Fairy",
+    "url": "https://github.com/cameronsweeney/musicfairy",
+    "description": "A command line tool to analyze your streaming history from Spotify, written in Python and SQL. Example functions: what songs did I listen to most on this day? What artists did I listen to the most in a specific month? // Python, SQL"
+    },
+    {
+        "title": "AutoGen Docker experiment",
+        "url": "https://github.com/cameronsweeney/autogen_docker_test",
+        "description": "A few Dockerfiles plus a walkthrough that will help you set up AutoGen inside a Docker container and connect it to an open-source large language model with Ooba Booga. In the example, I use Mixtral. // Docker, AutoGen, Ooba Booga, Google Colab, Mixtral/Hugging Face"
+    },
+    {
+        "title": "This website!",
+        "url": "https://github.com/cameronsweeney/portfolio",
+        "description": "The source code for this website. Built on Django/Python and React/Typescript. // also maybe PostgreSQL?"
+    },
+    {
+        "title": "Lecture at the Beach",
+        "url": "https://github.com/cameronsweeney/",
+        "description": "idk... request.cam backend??? how do I share this? // Django/Python, React/JavaScript, PostgreSQL"
+    },
+    {
+        "title": "Marcy & Myrtle Delivery App",
+        "url": "https://github.com/cameronsweeney/",
+        "description": "also not sure how best to share this... // Ruby on Rails, Flutter/Dart, iOS stuff"
+    },
+    {
+        "title": "Pokémon Locations/pypkmn",
+        "url": "https://github.com/cameronsweeney/pypkmn",
+        "description": "Also this: https://github.com/cameronsweeney/pokemon-locations. Some Python code that reads wild Pokémon location data from ROMs of Pokémon Red, Blue, and Yellow. It also sends the data directly into a database backend for my Pokédex. // Python"
+    },
+    {
+        "title": "http2cam",
+        "url": "https://github.com/cameronsweeney/http2cam",
+        "description": "Backend for website // Django/Python, PostgreSQL"
+    },
+    {
+        "title": "hypershrub - tree visualizer",
+        "url": "https://github.com/cameronsweeney/hypershrub",
+        "description": "something something hyperbolic (not really) tree visualizer // React+Redux/JavaScript"
+    }
+]

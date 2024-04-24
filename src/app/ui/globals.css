@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***********************************
+*** declare global CSS variables ***
+***********************************/
+
+:root {
+  --measure-half: 0.625rem;
+  --measure-1-half: 1.272rem;
+  
+  --measure-1: 1rem;
+  --measure-2: 1.6rem;
+  --measure-3: 2.56rem;
+  --measure-4: 4.096rem;
+  --measure-5: 6.5536rem;
+  
+  --color-bg: white;
+  --color-text: #000000;
+
+  --color-main-1: #B87BA0;
+  --color-main-2: #319177;
+  --color-header: #3EB489;
+  --color-shadow: #481935;
+
+  --color-main-p: #CB67A3;
+
+  --color-portfolio-text: white;
+  /* from old portfolio About Page Colors */
+
+  --color-portfolio-main-1: #555555;
+  /* old --color-main-1: #727272 */
+  --color-portfolio-main-2: #24232D;
+  --color-portfolio-shadow: #000000;
+
+
+}
+
+/**************************
+*** some global styling ***
+**************************/
+
+html {
+  height: 100%;
+  width: 100%;
+
+  overflow-x: hidden;
+
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  margin: 0;
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*************************************/
+
+article {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+
+  display: flex;
+  align-items: stretch;
+}
+
+article > div {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/****************/
