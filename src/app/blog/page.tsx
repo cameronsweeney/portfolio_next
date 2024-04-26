@@ -13,6 +13,9 @@ export default function Page() {
           <li>
             <Link key="blog_1" href="/blog/1">What do why game</Link>
           </li>
+          <li>
+            <Link key="blog_2" href="/blog/2">What do why game: MDX edition</Link>
+          </li>
         </ul>
       </div>
     )
