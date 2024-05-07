@@ -38,9 +38,9 @@ const ProjectDescription = (props: ProjectProps) => {
 
 export default function Page() {
     return (
-      <div id="root">
+      <div id="root" className={styles.portfolio_page}>
         <h1>Portfolio Project List</h1>
-        <p>
+        <p className="my-2">
             <Link key="profile" href="/">Back to profile</Link>
         </p>
         <ProjectDescription projectJSON={projectJSON} />

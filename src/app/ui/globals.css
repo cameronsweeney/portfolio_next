@@ -19,10 +19,10 @@
   --color-bg: white;
   --color-text: #000000;
 
-  --color-main-1: #B87BA0;
+  --color-main-1: #C14991;
   --color-main-2: #319177;
   --color-header: #3EB489;
-  --color-shadow: #481935;
+  --color-shadow: #000000;
 
   --color-main-p: #CB67A3;
 
@@ -55,7 +55,6 @@ body {
   width: 100%;
 
   overflow-x: hidden;
-  overflow-y: scroll;
 
   margin: 0;
 
@@ -72,23 +71,3 @@ img {
 }
 
 /*************************************/
-
-article {
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0;
-
-  display: flex;
-  align-items: stretch;
-}
-
-article > div {
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-}
-
-/****************/

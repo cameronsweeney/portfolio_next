@@ -38,5 +38,15 @@
         "title": "hypershrub - tree visualizer",
         "url": "https://github.com/cameronsweeney/hypershrub",
         "description": "something something hyperbolic (not really) tree visualizer // React+Redux/JavaScript"
+    },
+    {
+        "title": "Scrum Dashboard",
+        "url": "https://github.com/cameronsweeney/musicfairy",
+        "description": "Interactive project management display that puts all your active projects & areas on a hexagonal grid. Built with React/Typescript/HTML/CSS/Next.js"
+    },
+    {
+        "title": "Friendship Is Magic",
+        "url": "https://github.com/cameronsweeney/musicfairy",
+        "description": "gamified relationship/connection cocreation"
     }
 ]
