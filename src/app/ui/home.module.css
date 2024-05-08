@@ -1,3 +1,6 @@
+.home_page {
+  overflow-y: scroll;
+}
 
 .left_background {
   position: absolute;
@@ -8,7 +11,6 @@
   background: linear-gradient(135deg, var(--color-main-1) 0 calc((25vh + 25vw) * 1.414), rgba(0,0,0,0) calc((25vh + 25vw) * 1.414)) no-repeat;
   background-attachment: scroll;
 
-  overflow: hidden;
   z-index: -3;
 }
 
@@ -21,7 +23,6 @@
   background: linear-gradient(135deg, rgba(0,0,0,0) 0 calc((25vh + 25vw) * 1.414), var(--color-main-2) calc((25vh + 25vw) * 1.414)) no-repeat;
   background-attachment: scroll;
 
-  overflow: hidden;
   z-index: -3;
 }
 

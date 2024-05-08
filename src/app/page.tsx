@@ -92,32 +92,34 @@ export default function Home() {
     <div>
       <div className={styles.left_background}></div>
       <div className={styles.right_background}></div>
-      <div className={styles.header}>
-        <h1 className={styles.header_h1}><span>hello, i&apos;m cameron.</span></h1>
-        <NavLinks />
-      </div>
-      <div className={styles.content}>
-        <div className={styles.photo}>
-          <div>
-            <Image 
-              src={"/cameron.jpg"}
-              width={1200}
-              height={800}
-              alt="Cameron"
-            />
-          </div>
+      <div className={styles.home_page}>
+        <div className={styles.header}>
+          <h1 className={styles.header_h1}><span>hello, i&apos;m cameron.</span></h1>
+          <NavLinks />
         </div>
-        <div className={styles.upper_left}>
-          <div>
-            <p>Welcome to my website! My name is Cameron Sweeney, and I&apos;m a full-stack developer and educator based in Brooklyn.</p>
+        <div className={styles.content}>
+          <div className={styles.photo}>
+            <div>
+              <Image 
+                src={"/cameron.jpg"}
+                width={1200}
+                height={800}
+                alt="Cameron"
+              />
+            </div>
+          </div>
+          <div className={styles.upper_left}>
+            <div>
+              <p>Welcome to my website! My name is Cameron Sweeney, and I&apos;m a full-stack developer and educator based in Brooklyn.</p>
+    
+              <p>I build websites and apps with Python, JavaScript, Ruby, and more. This website is built with React, Django, and PostgreSQL.</p>
+            
+              <p>For over 15 years, I have immersed myself in the world of coding, starting with tinkering on my old MySpace profile and progressing to a strong interest in web design and programming.</p>
+    
+              <p>During my linguistics degree, I honed my skills with Python and LaTeX, utilizing them in various school projects. At this time I also developed my first fully-fledged app, a library checkout system for my college dorm built on JavaScript/Google Apps Script.</p>
   
-            <p>I build websites and apps with Python, JavaScript, Ruby, and more. This website is built with React, Django, and PostgreSQL.</p>
-          
-            <p>For over 15 years, I have immersed myself in the world of coding, starting with tinkering on my old MySpace profile and progressing to a strong interest in web design and programming.</p>
-  
-            <p>During my linguistics degree, I honed my skills with Python and LaTeX, utilizing them in various school projects. At this time I also developed my first fully-fledged app, a library checkout system for my college dorm built on JavaScript/Google Apps Script.</p>
-
-            <p>I also tutor math (prealgebra through calculus), test prep for the SHSAT/SAT/ACT, physics, chemistry, German, French, and English as a foreign language.</p>
+              <p>I also tutor math (prealgebra through calculus), test prep for the SHSAT/SAT/ACT, physics, chemistry, German, French, and English as a foreign language.</p>
+            </div>
           </div>
         </div>
       </div>
