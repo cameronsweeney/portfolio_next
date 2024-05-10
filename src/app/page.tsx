@@ -18,69 +18,70 @@ const ExampleBlogLink = () => {
   );
 }
 
+interface LinkButtonProps {
+  id: string;
+  url: string;
+  img_src: string;
+  img_alt: string;
+}
+
+
+const LinkButton: React.FC<LinkButtonProps> = (props) => {
+  return(
+    <div key={props.id}>
+      <div>
+        <Link href={props.url}>
+          <div className={styles.link_icon}>
+            <div>
+              <Image
+                height={256}
+                width={256}
+                src={props.img_src}
+                alt={props.img_alt}
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
+    </div>  
+  );
+}
+
 const NavLinks = () => {
 
     return (    
         <div className={styles.header_links}>
             <div className={styles.link_wrapper}>
-            <div key="email">
-                <div>
-                  <a href="mailto:camswee@gmail.com">
-                    <div className={styles.link_icon}>
-                      <div>
-                        <Image
-                          height={256}
-                          width={256}
-                          src={"/icons/email.svg"}
-                          alt="Email"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>  
-              <div key="linkedin">
-                <div>
-                  <a href="https://www.linkedin.com/in/camswee/">
-                    <div className={styles.link_icon}>
-                      <div>
-                        <Image
-                          height={256}
-                          width={256}
-                          src={"/icons/linkedin.svg"}
-                          alt="LinkedIn"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>  
-              <div key="github">
-                <div>
-                  <a href="https://github.com/cameronsweeney/">
-                    <div className={styles.link_icon}>
-                      <div>
-                        <Image
-                          height={256}
-                          width={256}
-                          src={"/icons/github.svg"}
-                          alt="Github"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div key="blog">
-                <div>
-                  <ExampleBlogLink />
-                </div>
-              </div>
-              <div key="portfolio">
-                <div>
-                  <ExamplePortfolioLink />
-                </div>
-              </div>
+              <LinkButton
+                id="email"
+                url="mailto:camswee@gmail.com"
+                img_src="/icons/email.svg"
+                img_alt="Email"
+              />
+              <LinkButton
+                id="linkedin"
+                url="https://www.linkedin.com/in/camswee/"
+                img_src="/icons/linkedin.svg"
+                img_alt="LinkedIn"
+              />
+              <LinkButton
+                id="github"
+                url="https://github.com/cameronsweeney/"
+                img_src="/icons/github.svg"
+                img_alt="Github"
+              />
+              <LinkButton
+                id="blog"
+                url="/blog"
+                img_src="/icons/blog.svg"
+                img_alt="Blog"
+              />
+              <LinkButton
+                id="portfolio"
+                url="/portfolio"
+                img_src="/icons/portfolio.svg"
+                img_alt="Portfolio"
+              />
             </div>
         </div>
     );

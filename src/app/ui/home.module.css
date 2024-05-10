@@ -203,18 +203,14 @@
   height: fit-content;
 }
 
-.link_icon img,
 .link_icon div,
-.link_icon svg,
-.link_img {
+.link_icon svg {
+  margin: 0;
+  padding: 0 !important;
   display: block;
   height: 4rem;
   width: 4rem;
 }
-
-/*** LinkButton.css ***/
-
-/*** Header.css ***/
 
 .header {
   display: flex;

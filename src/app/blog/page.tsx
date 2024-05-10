@@ -10,7 +10,7 @@ function ArrowRightIcon(props: any) {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -33,10 +33,10 @@ export default function BlogPosts() {
   });
 
   const BlogPostComponents = sortedBlogPosts.map((post) => (
-    <div key={post.slug} className="rounded-lg bg-white p-6 shadow-md">
-      <Link href={`/blog/${post.slug}`}>
+    <Link key={post.slug} href={`/blog/${post.slug}`}>
+      <div className="rounded-lg bg-white p-6 shadow-inner">
         <div>
-          <h2 className="mt-2 text-xl font-semibold text-gray-900 hover:text-gray-600">
+          <h2 className="my-2 text-xl font-semibold text-black hover:text-gray-600">
             {post.metadata.title}
           </h2>
           <div className="flex items-center justify-between">
@@ -44,11 +44,17 @@ export default function BlogPosts() {
             <ArrowRightIcon className="h-4 w-4" />
           </div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   ));
 
   return (
-    <div className="mt-8 grid gap-8 lg:grid-cols-2">{BlogPostComponents}</div>
-  )
+    <>
+    <h1 className="m-6 text-6xl font-extrabold tracking-tight text-gray-100">Blog Page</h1>
+    <p className="text-2xl hover:underline">
+        <Link key="profile" href="/">Back to profile</Link>
+    </p>
+    <div className="m-8 grid gap-8 lg:grid-cols-3">{BlogPostComponents}</div>
+    </>
+  );
 }

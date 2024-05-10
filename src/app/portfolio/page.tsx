@@ -6,8 +6,11 @@ import projectsFromJsonFile from './projects.json';
 
 type Project = {
     title: string;
-    url: string;
+    status: string;
+    url_github: string;
+    url_deployed?: string;
     description: string;
+    tech_stack: string;
 };
 
 type ProjectArray = Project[];
@@ -23,7 +26,7 @@ const ProjectDescription = (props: ProjectProps) => {
 
   const projectComponents = projectJSON.map((project, index) => (
     <div key={index} className={styles.project}>
-      <h2><a href={project.url}>{project.title}</a></h2>
+      <h2><a href={project.url_github}>{project.title}</a></h2>
       <div>
         <Image src={"/VS_Code_Screenshot.png"} width={240} height={132.25} alt="code screenshot" />
       </div>
