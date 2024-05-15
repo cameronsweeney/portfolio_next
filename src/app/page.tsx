@@ -95,7 +95,7 @@ export default function Home() {
       <div className={styles.right_background}></div>
       <div className={styles.home_page}>
         <div className={styles.header}>
-          <h1 className={styles.header_h1}><span>hello, i&apos;m cameron.</span></h1>
+          <h1 className={styles.header_h1}><span>hello,&nbsp;i&apos;m&nbsp;cameron.</span></h1>
           <NavLinks />
         </div>
         <div className={styles.content}>

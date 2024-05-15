@@ -64,7 +64,7 @@
 }
 
 .upper_left p {
-  font-size: var(--measure-2);
+  font-size: var(--measure-1-half);
   padding: var(--measure-half) var(--measure-1);
   margin: 0;
 }
@@ -74,7 +74,7 @@
 .photo {
   flex: 1 1 40%;
 
-  min-width: 20rem;
+  min-width: min(25rem, 90vw);
   max-width: 35rem;
 
   display: flex;
@@ -90,36 +90,22 @@
   box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
 }
 
-/**** NavLinks.css ***/
-
-
-.home_links {
-  flex: 1 1 33%;
-  margin: 0 var(--measure-3) 0 var(--measure-3);
-
-  display: flex;
-  justify-content: space-around;
-}
 
 .header_links {
-  flex: 1 1 45%;
-  padding: var(--measure-2);
+  flex: 1 1 20%;
+  margin: var(--measure-1) var(--measure-1) var(--measure-1) 0;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-
-  overflow-x: scroll;
 }
 
 .link_wrapper {
-  flex: 0 1 50%;
-
   overflow: visible;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .link_wrapper > div > div {
@@ -175,7 +161,7 @@
   transform: scale(1);
   transform-origin: top left;
   transition: transform .4s ease-out;
-  background: linear-gradient(135deg, var(--color-main-1) 0 50%, var(--color-header) 50% 100%);
+  background: linear-gradient(135deg, var(--color-main-p) 0 50%, var(--color-header) 50% 100%);
   overflow: hidden;
   z-index: -1;
 }
@@ -194,10 +180,6 @@
   align-items: center;
 }
 
-.header_links .link_wrapper > :nth-child(n+2) {
-  padding-left: var(--measure-2);
-}
-
 .link_icon {
   padding: 0 !important;
   height: fit-content;
@@ -208,8 +190,22 @@
   margin: 0;
   padding: 0 !important;
   display: block;
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (min-width: 640px) {
+  .link_icon div, .link_svg div {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .link_icon div, .link_svg div {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 .header {
@@ -219,21 +215,27 @@
 
   overflow: visible;
 
-  margin: var(--measure-2) var(--measure-2) 0 var(--measure-2);
+  margin: var(--measure-1) var(--measure-1) 0 var(--measure-1);
 }
 
 h1.header_h1 {
-  flex: 1 1 auto;
+  flex: 1 1 20%;
 
   font-family: 'Lato', sans-serif;
-  font-size: var(--measure-4);
-  margin: 0;
+  font-size: var(--measure-3);
+  margin: var(--measure-1) var(--measure-1) 0 var(--measure-1);
 
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  h1.header_h1 {
+    font-size: var(--measure-4);
+  }
 }
 
 .header h1 span {
   background-color: var(--color-main-1);
-  margin-left: var(--measure-2);
 }
