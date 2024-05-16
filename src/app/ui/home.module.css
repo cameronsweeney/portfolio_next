@@ -26,9 +26,6 @@
   z-index: -3;
 }
 
-
-/*******************************************/
-
 .content {
   display: flex;
   flex-direction: row;
@@ -38,10 +35,7 @@
   margin: 0 var(--measure-2) var(--measure-2) var(--measure-2);
 }
 
-/***** UpperLeft.css ****/
-
-
-.upper_left {
+.main_text {
   flex: 1 1 40%;
 
   min-width: min(25rem, 90vw);
@@ -54,7 +48,7 @@
   justify-content: flex-start;
 }
 
-.upper_left > div {
+.main_text > div {
   width: fit-content;
 
   background-color: var(--color-main-p);
@@ -63,13 +57,11 @@
   padding-bottom: var(--measure-half);
 }
 
-.upper_left p {
+.main_text p {
   font-size: var(--measure-1-half);
   padding: var(--measure-half) var(--measure-1);
   margin: 0;
 }
-
-/**** PhotoComponent.css ****/
 
 .photo {
   flex: 1 1 40%;
@@ -90,7 +82,6 @@
   box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
 }
 
-
 .header_links {
   flex: 1 1 20%;
   margin: var(--measure-1) var(--measure-1) var(--measure-1) 0;
@@ -108,50 +99,22 @@
   align-items: center;
 }
 
-.link_wrapper > div > div {
+.link_wrapper > div > a > div {
   overflow: hidden;
   position: relative;
   display: block;
 
-  font-family: 'Lato', sans-serif;
   font-size: var(--measure-2);
 
   box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
-}
-
-
-.home_links .link_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.home_links > div {
-  position: relative;
-  margin: var(--measure-1);
-  display: flex;
-  flex-direction: row;
-}
-
-.home_links div div {
-  position: relative;
-  display: block;
-
-  font-family: 'Lato', sans-serif;
-  font-size: var(--measure-3);
-
-  padding: var(--measure-half);
 }
 
 .header_links div div {
   padding: var(--measure-half);
 }
 
-.header_links span::before,
-.header_links div.link_icon::before,
-.home_links div:first-child span::before
-{
+/* .header_links div.link_icon::before, */
+.link_icon::before {
   content: '';
   position: absolute;
   top: 0%;
@@ -166,9 +129,7 @@
   z-index: -1;
 }
 
-.header_links span:hover::before,
-.header_links div.link_icon:hover::before,
-.home_links div:first-child span:hover::before
+div:hover > .link_icon::before
 {
   transform: translateX(60%);
 }
@@ -221,7 +182,6 @@
 h1.header_h1 {
   flex: 1 1 20%;
 
-  font-family: 'Lato', sans-serif;
   font-size: var(--measure-3);
   margin: var(--measure-1) var(--measure-1) 0 var(--measure-1);
 
