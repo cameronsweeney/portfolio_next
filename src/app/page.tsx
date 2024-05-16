@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from '@/app/ui/home.module.css';
+import { lato } from '@/app/ui/fonts';
 
 const ExamplePortfolioLink = () => {
   return(
@@ -29,8 +30,8 @@ interface LinkButtonProps {
 const LinkButton: React.FC<LinkButtonProps> = (props) => {
   return(
     <div key={props.id}>
-      <div>
-        <Link href={props.url}>
+      <Link href={props.url}>
+        <div>
           <div className={styles.link_icon}>
             <div>
               <Image
@@ -41,8 +42,8 @@ const LinkButton: React.FC<LinkButtonProps> = (props) => {
               />
             </div>
           </div>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>  
   );
 }
@@ -95,7 +96,7 @@ export default function Home() {
       <div className={styles.right_background}></div>
       <div className={styles.home_page}>
         <div className={styles.header}>
-          <h1 className={styles.header_h1}><span>hello,&nbsp;i&apos;m&nbsp;cameron.</span></h1>
+          <h1 className={`${styles.header_h1} ${lato.className}`}><span>hello,&nbsp;i&apos;m&nbsp;cameron.</span></h1>
           <NavLinks />
         </div>
         <div className={styles.content}>
@@ -109,7 +110,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className={styles.upper_left}>
+          <div className={styles.main_text}>
             <div>
               <p>Welcome to my website! My name is Cameron Sweeney, and I&apos;m a full-stack developer and educator based in Brooklyn.</p>
     
