@@ -2,7 +2,7 @@ import { Lato, Barlow_Semi_Condensed } from 'next/font/google';
  
 export const lato = Lato(
     { 
-        weight: "700",
+        weight: "400",
         subsets: ["latin"]
     }
 );
