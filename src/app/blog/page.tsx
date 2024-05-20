@@ -50,7 +50,7 @@ export default function BlogPosts() {
 
   return (
     <>
-    <h1 className="m-6 text-6xl font-extrabold tracking-tight text-gray-100">Blog Page</h1>
+    <h1 className="m-6 text-5xl lg:text-6xl font-extrabold tracking-tight">Blog Posts</h1>
     <p className="text-2xl hover:underline">
         <Link key="profile" href="/">Back to profile</Link>
     </p>

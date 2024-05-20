@@ -49,18 +49,12 @@ export default function Blog({ params }: any) {
 
   return (
     <section className={styles.blog_post_page}>
-      <h1>
-        {post.metadata.title}
-      </h1>
-      <div>
-        <p>
-            <Link key="blog" href="/blog">^Back to list of blog posts</Link>
-        </p>
-        <p>
-          {formatDate(post.metadata.publishedAt)}
-        </p>
+      <div className="mb-4 text-xl flex justify-between">
+        <Link key="blog" href="/blog" className="text-emerald-400 hover:text-emerald-200">&larr; Back to all posts</Link>
+        <p>{formatDate(post.metadata.publishedAt)}</p>
       </div>
       <article className={styles.blog_post}>
+        <h1 className="my-4 lg:my-5 text-4xl lg:text-5xl text-violet-400">{post.metadata.title}</h1>
         <CustomMDX source={post.content} />
       </article>
     </section>

@@ -1,32 +1,30 @@
 ---
-title: 'AutoGen Docker Week of Weird'
+title: 'Running Open-Source LLMs with AutoGen & Oobabooga'
 publishedAt: '2024-04-30'
 summary: 'In a very technical sense, I did it.'
 ---
 
-# Blog Post: Simplifying AutoGen Setup with Docker and Ooba Booga
-
 In the realm of text generation and AI-powered tools, setting up an efficient and flexible environment is key to leveraging the best of open-source models. My recent journey involved integrating AutoGen with an open-source model, specifically Mistral from Hugging Face, through a Docker container, and connecting it to an Ooba Booga backend. This exploration not only deepened my understanding of these tools but also illuminated a path for others to follow with ease.
 
-### The Adventure Begins: Establishing the Ooba Booga Backend
+## The Adventure Begins: Establishing the Ooba Booga Backend
 
 The first step of this journey was to bring Ooba Booga to life within a Google Colab notebook. This quirky-named backend serves as a bridge to our desired AI model, facilitating the interaction without much hassle. The process starts innocuously with running a cell that plays 24 hours of silence – a clever trick to keep the Colab session active.
 
 The real magic happens when you specify the model you wish to use, such as Mistral-7B-Instruct-v0.2 from Hugging Face, and expose it through an OpenAI-like API. Once the model loads and runs, it provides a Cloudflare URL, which becomes the endpoint for our AutoGen setup, making the entire setup feel like connecting dots in a high-tech constellation.
 
-### Docker to the Rescue: AutoGen and Its Dependencies
+## Docker to the Rescue: AutoGen and Its Dependencies
 
 Building a Docker image for AutoGen introduces a layer of abstraction, encapsulating the environment and its dependencies in a container. This image, derived from AutoGen's development Dockerfile, encompasses everything needed to run AutoGen seamlessly. The build process, though lengthy due to the image size, is a one-time investment into creating a robust development environment. The inclusion of sample scripts in the /import/scripts directory ensures that custom tools and files are readily accessible within the Docker ecosystem.
 
-### Setting Sail: Running AutoGen within Docker
+## Setting Sail: Running AutoGen within Docker
 
 With the Docker container up, accessing and running AutoGen becomes a breeze. A simple docker compose command not only builds our custom setup but also allows for interactive engagement through the terminal. The flexibility of Docker Compose means that any modifications, either to scripts or the environment, are easily accommodated without the need to rebuild the entire image from scratch.
 
-### The First Test: Unleashing AutoGen's Potential
+## The First Test: Unleashing AutoGen's Potential
 
 Navigating to the /home/autogen/autogen/import directory within the container reveals the imported test scripts, ready to demonstrate the power of AutoGen connected to our model via Ooba Booga. Executing these scripts showcases the seamless interaction between AutoGen and the AI model, whether it's generating text based on hardcoded instructions or accepting dynamic input for more customized interactions.
 
-### Lessons Learned and Paths Forged
+## Lessons Learned and Paths Forged
 
 This exploration through setting up AutoGen in a Docker container, connected to an open-source AI model via Ooba Booga, is more than just a technical walkthrough. It's a testament to the power of open-source tools and the communities that build them. The journey highlighted the importance of flexibility in development environments, the potential of AI in generating text, and the innovative ways we can connect different technologies to achieve remarkable results.
 
