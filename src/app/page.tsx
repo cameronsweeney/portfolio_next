@@ -24,23 +24,34 @@ interface LinkButtonProps {
   url: string;
   img_src: string;
   img_alt: string;
+  title?: string;
 }
 
 
 const LinkButton: React.FC<LinkButtonProps> = (props) => {
+
+  let imageComponent = <Image height={256} width={256} src={props.img_src} alt={props.img_alt}/>;
+
+  let linkButtonComponent;
+
+  if (props.title) {
+    linkButtonComponent = (
+      <div>
+        <Image height={256} width={256} src={props.img_src} alt={props.img_alt}/>
+        <p className={lato.className}>{props.title}</p>
+      </div>
+    )
+  } else {
+   linkButtonComponent = <div>{imageComponent}</div>;
+  }
+
+
   return(
     <div key={props.id}>
       <Link href={props.url}>
         <div>
           <div className={styles.link_icon}>
-            <div>
-              <Image
-                height={256}
-                width={256}
-                src={props.img_src}
-                alt={props.img_alt}
-              />
-            </div>
+            {linkButtonComponent}
           </div>
         </div>
       </Link>
@@ -76,12 +87,14 @@ const NavLinks = () => {
                 url="/blog"
                 img_src="/icons/blog.svg"
                 img_alt="Blog"
+                title="blog"
               />
               <LinkButton
                 id="portfolio"
                 url="/portfolio"
                 img_src="/icons/portfolio.svg"
                 img_alt="Portfolio"
+                title="portfolio"
               />
             </div>
         </div>
