@@ -125,15 +125,17 @@ export default function Home() {
           </div>
           <div className={styles.main_text}>
             <div>
-              <p>Welcome to my website! My name is Cameron Sweeney, and I&apos;m a full-stack developer and educator based in Brooklyn.</p>
-    
-              <p>I build websites and apps with Python, JavaScript, Ruby, and more. This website is built with React, Django, and PostgreSQL.</p>
-            
-              <p>For over 15 years, I have immersed myself in the world of coding, starting with tinkering on my old MySpace profile and progressing to a strong interest in web design and programming.</p>
-    
-              <p>During my linguistics degree, I honed my skills with Python and LaTeX, utilizing them in various school projects. At this time I also developed my first fully-fledged app, a library checkout system for my college dorm built on JavaScript/Google Apps Script.</p>
-  
-              <p>I also tutor math (prealgebra through calculus), test prep for the SHSAT/SAT/ACT, physics, chemistry, German, French, and English as a foreign language.</p>
+              <p>Welcome to my website! My name is Cameron Sweeney, and I'm a full-stack developer and educator based in Brooklyn.</p>
+              
+              <p>I teach math, language, and science, and I build websites and programs with <strong>Python</strong>, <strong>JavaScript/Typescript</strong>, and more. This website is built with <strong>HTML</strong>, <strong>CSS/Tailwind</strong>, <strong>JavaScript/Typescript</strong>, <strong>React</strong>, and <strong>Next.js</strong>.</p>
+
+              <p>Recently, I've been diving into the latest AI technologies to make software development faster and more efficient. My work mainly involves ML Ops and using tools like <strong>AutoGen</strong>, <strong>LM Studio</strong>, and <strong>Oobabooga</strong>, to harness the power of <strong>ChatGPT</strong> and open-source language models for tackling complex challenges. I'm actively engaged in  prompt engineering and agent swarm architecture research, with my current focus on the automated generation of non-trivial, production-grade software.</p>
+
+              <p>My project experience includes building RESTful APIs with <strong>Python</strong> and <strong>FastAPI</strong>, <strong>Django-REST-Framework</strong>, and <strong>Ruby on Rails</strong>, as well as <strong>PostgreSQL</strong> and <strong>SQLite</strong> databases. I first learned to code like many devs I know &ndash; by writing <strong>HTML/CSS</strong> and <strong>JavaScript</strong> in middle school. My studies in college led me to write <strong>Python</strong>, <strong>JavaScript</strong>, <strong>LaTeX</strong>, and <strong>Google Apps Script</strong>. Over the last year I've built many web servers, front-ends, and I've been focusing on keeping up with the rapidly advancing AI and ML space. I've focused deeply on Prompt Engineering, and now Generative AI supercharges my development speed.</p>
+
+              <p>I've kept up with the rapid pace of development in <strong>Prompt Engineering</strong> and <strong>Large Language Models</strong>, by getting involved in several interesting projects with folks from The Multiverse School, such as the Life Gamification project (automated project management), TreeOfAttacks (automated hacking), and JASON (automated resume management).</p>
+
+              <p>I am a passionate educator with over 10 years of teaching experience in many contexts: America Reads/Counts in NYC Public School, Fulbright ETA in German Gymnasium, private English/French tutor in Düsseldorf, SAT/ACT tutor in &amp; around London, math/test prep/science/language tutor in Brooklyn. One of my favorite activities is helping people understand complex topics and be empowered to use that understanding.</p>
             </div>
           </div>
         </div>

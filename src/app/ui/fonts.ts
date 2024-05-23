@@ -9,7 +9,7 @@ export const lato = Lato(
 
 export const barlow_semi_condensed = Barlow_Semi_Condensed(
     { 
-        weight: "400",
+        weight: ["400", "500"],
         subsets: ["latin"]
     }
 );
