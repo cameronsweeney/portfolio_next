@@ -39,7 +39,7 @@ const ProjectsGrid = (props: ProjectProps) => {
   )
 }
 
-export const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
+const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
 
 export default function Page() {
     return (
