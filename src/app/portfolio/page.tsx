@@ -21,7 +21,7 @@ type ProjectProps = {
   projectJSON: ProjectArray;
 };
 
-const ProjectDescription = (props: ProjectProps) => {
+const ProjectsGrid = (props: ProjectProps) => {
   const { projectJSON } = props;
 
   const projectComponents = projectJSON.map((project, index) => (
@@ -39,6 +39,8 @@ const ProjectDescription = (props: ProjectProps) => {
   )
 }
 
+export const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
+
 export default function Page() {
     return (
       <div id="root" className={styles.portfolio_page}>
@@ -46,7 +48,8 @@ export default function Page() {
         <p className="my-2">
             <Link key="profile" href="/">Back to profile</Link>
         </p>
-        <ProjectDescription projectJSON={projectJSON} />
+        <p>{inDevEnvironment ? "development" : "production"}</p>
+        <ProjectsGrid projectJSON={projectJSON} />
       </div>
     )
 };

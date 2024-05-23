@@ -52,7 +52,7 @@ export default function BlogPosts() {
     <>
     <h1 className="m-6 text-5xl lg:text-6xl font-extrabold tracking-tight">Blog Posts</h1>
     <p className="text-2xl hover:underline">
-        <Link key="profile" href="/">Back to profile</Link>
+        <Link key="profile" href="/">&larr; Back to profile</Link>
     </p>
     <div className="m-8 grid gap-8 lg:grid-cols-3">{BlogPostComponents}</div>
     </>

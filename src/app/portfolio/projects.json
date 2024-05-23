@@ -24,11 +24,11 @@
         "tech_stack": "HTML, CSS, JavaScript/Typescript, React, Next.js, Vercel"
     },
     {
-        "title": "Lecture at the Beach",
+        "title": "Lecture at the Beach Conference API",
         "status": "JUST AN IDEA",
         "url_github": "https://github.com/cameronsweeney/",
         "url_deployed": "#",
-        "description": "idk... request.cam backend??? how do I share this?",
+        "description": "idk... request.cam backend??? how do I share this? call this an API; take a screenshot of code & maybe form??? link to github wherever that is;;; mention freelance",
         "tech_stack": "Django/Python, React/JavaScript, PostgreSQL"
     },
     {
@@ -36,7 +36,7 @@
         "status": "JUST AN IDEA",
         "url_github": "https://github.com/cameronsweeney/",
         "url_deployed": "#",
-        "description": "also not sure how best to share this... ",
+        "description": "also not sure how best to share this... TAKE SCREENSHOT OF CODE AND/OR APP;;;; mention freelance contract",
         "tech_stack": "Ruby on Rails, Flutter/Dart, iOS stuff"
     },
     {
@@ -92,7 +92,15 @@
         "status": "NEEDS WORK",
         "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
         "url_deployed": "#",
-        "description": "gamified relationship/connection cocreation",
-        "tech_stack": "ChatGPT, HTML, CSS, JS, Vanilla.js??, Python/FastAPI, PostgreSQL/Neon Database"
+        "description": "class project",
+        "tech_stack": "ChatGPT, what else??"
+    },
+    {
+        "title": "DataviewJS Dashboard",
+        "status": "ALMOST READY",
+        "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+        "url_deployed": "#",
+        "description": "I made a script to query tasks in my obsidian vault",
+        "tech_stack": "Obsidian, DataviewJS, JS"
     }
 ]
