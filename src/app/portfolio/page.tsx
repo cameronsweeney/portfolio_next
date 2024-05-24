@@ -6,27 +6,37 @@ import projectsFromJsonFile from './projects.json';
 
 type Project = {
     title: string;
-    status: string;
     url_github: string;
     url_deployed?: string;
     description: string;
     tech_stack: string;
 };
 
-type ProjectArray = Project[];
-
-const projectJSON: ProjectArray = projectsFromJsonFile;
-
-type ProjectProps = {
-  projectJSON: ProjectArray;
+type ProjectData = {
+  current_projects: Project[];
+  ready: Project[];
+  almost_ready: Project[];
+  needs_work: Project[];
+  ideas: Project[];
 };
 
-const ProjectsGrid = (props: ProjectProps) => {
-  const { projectJSON } = props;
+const projectJSON: ProjectData = projectsFromJsonFile;
 
-  const projectComponents = projectJSON.map((project, index) => (
+type ProjectGridProps = {
+  projects: Project[];
+};
+
+type ProjectSectionProps = {
+  title: string;
+  projects: Project[]
+}
+
+const ProjectGrid = (props: ProjectGridProps) => {
+  const { projects } = props;
+
+  const projectComponents = projects.map((project, index) => (
     <div key={index} className={styles.project}>
-      <h2><a href={project.url_github}>{project.title}</a></h2>
+      <h3><a href={project.url_github}>{project.title}</a></h3>
       <div>
         <Image src={"/VS_Code_Screenshot.png"} width={240} height={132.25} alt="code screenshot" />
       </div>
@@ -35,21 +45,48 @@ const ProjectsGrid = (props: ProjectProps) => {
   ));
 
   return (
-    <div className={styles.project_list}>{projectComponents}</div>
+    <>{projectComponents}</>
   )
 }
 
-const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
+
+const ProjectSection = (props: ProjectSectionProps) => {
+  const { title, projects } = props;
+
+  return (
+    <div className={styles.project_section} key={title}>
+      <h2>{title}</h2>
+      <p>---</p>
+      <div className={styles.project_grid}>
+        <ProjectGrid projects={projects}/>
+      </div>
+    </div>
+  );
+}
 
 export default function Page() {
-    return (
-      <div id="root" className={styles.portfolio_page}>
-        <h1>Portfolio Project List</h1>
-        <p className="my-2">
-            <Link key="profile" href="/">Back to profile</Link>
-        </p>
-        <p>{inDevEnvironment ? "development" : "production"}</p>
-        <ProjectsGrid projectJSON={projectJSON} />
-      </div>
+  const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
+  let projectSectionComponents: React.ReactNode[] = [];
+
+  // loop through parts of projectJSON to make <ProjectSection>s
+  Object.entries(projectJSON).forEach(([key, value]) => {
+    projectSectionComponents.push(
+      <ProjectSection title={key} projects={value} />
     )
+  });
+
+  return (
+    <div id="root" className={styles.portfolio_page}>
+      <section>
+        <div className="mb-4 text-xl flex justify-between">
+          <p><Link key="profile" href="/" className="text-emerald-400 hover:text-emerald-200">&larr; Back to profile</Link></p>
+          <p>{inDevEnvironment ? "development" : "production"}</p>
+        </div>
+        <article>
+          <h1>Portfolio Project List</h1>
+          {projectSectionComponents}
+        </article>
+      </section>
+    </div>
+  )
 };

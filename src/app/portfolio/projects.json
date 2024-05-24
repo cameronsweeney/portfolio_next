@@ -1,106 +1,102 @@
-[
-    {
-        "title": "Music Fairy",
-        "status": "ALMOST READY",
-        "url_github": "https://github.com/cameronsweeney/musicfairy",
-        "url_deployed": "#",
-        "description": "A command line tool to analyze your streaming history from Spotify, written in Python and SQL. Example functions: what songs did I listen to most on this day? What artists did I listen to the most in a specific month?",
-        "tech_stack": "Python, SQLite"
-    },
-    {
-        "title": "AutoGen Docker experiment",
-        "status": "ALMOST READY",
-        "url_github": "https://github.com/cameronsweeney/autogen_docker_test",
-        "url_deployed": "#",
-        "description": "A few Dockerfiles plus a walkthrough that will help you set up AutoGen inside a Docker container and connect it to an open-source large language model with Ooba Booga. In the example, I use Mixtral.",
-        "tech_stack": "Docker, AutoGen, Ooba Booga, Google Colab, Mixtral/Hugging Face"
-    },
-    {
-        "title": "This website!",
-        "status": "ALMOST READY",
-        "url_github": "https://github.com/cameronsweeney/portfolio",
-        "url_deployed": "https://sweeney.cam/",
-        "description": "The source code for this website.",
-        "tech_stack": "HTML, CSS, JavaScript/Typescript, React, Next.js, Vercel"
-    },
-    {
-        "title": "Lecture at the Beach Conference API",
-        "status": "JUST AN IDEA",
-        "url_github": "https://github.com/cameronsweeney/",
-        "url_deployed": "#",
-        "description": "idk... request.cam backend??? how do I share this? call this an API; take a screenshot of code & maybe form??? link to github wherever that is;;; mention freelance",
-        "tech_stack": "Django/Python, React/JavaScript, PostgreSQL"
-    },
-    {
-        "title": "Marcy & Myrtle Delivery App",
-        "status": "JUST AN IDEA",
-        "url_github": "https://github.com/cameronsweeney/",
-        "url_deployed": "#",
-        "description": "also not sure how best to share this... TAKE SCREENSHOT OF CODE AND/OR APP;;;; mention freelance contract",
-        "tech_stack": "Ruby on Rails, Flutter/Dart, iOS stuff"
-    },
-    {
-        "title": "Pokémon Locations/pypkmn",
-        "status": "NEEDS WORK",
-        "url_github": "https://github.com/cameronsweeney/pypkmn",
-        "url_deployed": "#",
-        "description": "Also this: https://github.com/cameronsweeney/pokemon-locations. Some Python code that reads wild Pokémon location data from ROMs of Pokémon Red, Blue, and Yellow. It also sends the data directly into a database backend for my Pokédex.",
-        "tech_stack": "Python"
-    },
-    {
-        "title": "Pokédex w unique name",
-        "status": "JUST AN IDEA",
-        "url_github": "https://github.com/cameronsweeney/pypkmn",
-        "url_deployed": "#",
-        "description": "Will be Pokédex.",
-        "tech_stack": "Python/Django???, React(?), what else??? IDK"
-    },
-    {
-        "title": "http2cam",
-        "status": "NEEDS WORK",
-        "url_github": "https://github.com/cameronsweeney/http2cam",
-        "url_deployed": "#",
-        "description": "Old backend for website",
-        "tech_stack": "Django/Python, PostgreSQL"
-    },
-    {
-        "title": "hypershrub - tree visualizer",
-        "status": "NEEDS WORK",
-        "url_github": "https://github.com/cameronsweeney/hypershrub",
-        "url_deployed": "#",
-        "description": "something something hyperbolic (not really) tree visualizer",
-        "tech_stack": "React+Redux/JavaScript"
-    },
-    {
-        "title": "Scrum Dashboard",
-        "status": "NEEDS WORK",
-        "url_github": "https://github.com/cameronsweeney/musicfairy",
-        "url_deployed": "#",
-        "description": "Interactive project management display that puts all your active projects & areas on a hexagonal grid.",
-        "tech_stack": "React/Typescript/HTML/CSS/Next.js"
-    },
-    {
-        "title": "Friendship Is Magic",
-        "status": "JUST AN IDEA",
-        "url_github": "https://github.com/cameronsweeney/musicfairy",
-        "url_deployed": "#",
-        "description": "gamified relationship/connection cocreation",
-        "tech_stack": "Python, Langchain/Langgraph, idk yet????"
-    },
-    {
-        "title": "Video Game FastAPI",
-        "status": "NEEDS WORK",
-        "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
-        "url_deployed": "#",
-        "description": "class project",
-        "tech_stack": "ChatGPT, what else??"
-    },
-    {
-        "title": "DataviewJS Dashboard",
-        "status": "ALMOST READY",
-        "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
-        "url_deployed": "#",
-        "description": "I made a script to query tasks in my obsidian vault",
-        "tech_stack": "Obsidian, DataviewJS, JS"
-    }
-]
+{
+    "current_projects": [
+        {
+            "title": "Scrum Dashboard",
+            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_deployed": "#",
+            "description": "Interactive project management display that puts all your active projects & areas on a hexagonal grid.",
+            "tech_stack": "React/Typescript/HTML/CSS/Next.js"
+        },
+        {
+            "title": "Friendship Is Magic",
+            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_deployed": "#",
+            "description": "gamified relationship/connection cocreation",
+            "tech_stack": "Python, Langchain/Langgraph, idk yet????"
+        }
+    ],
+    "ready": [],
+    "almost_ready": [
+        {
+            "title": "Music Fairy",
+            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_deployed": "#",
+            "description": "A command line tool to analyze your streaming history from Spotify, written in Python and SQL. Example functions: what songs did I listen to most on this day? What artists did I listen to the most in a specific month?",
+            "tech_stack": "Python, SQLite"
+        },
+        {
+            "title": "AutoGen Docker experiment",
+            "url_github": "https://github.com/cameronsweeney/autogen_docker_test",
+            "url_deployed": "#",
+            "description": "A few Dockerfiles plus a walkthrough that will help you set up AutoGen inside a Docker container and connect it to an open-source large language model with Ooba Booga. In the example, I use Mixtral.",
+            "tech_stack": "Docker, AutoGen, Ooba Booga, Google Colab, Mixtral/Hugging Face"
+        },
+        {
+            "title": "This website!",
+            "url_github": "https://github.com/cameronsweeney/portfolio",
+            "url_deployed": "https://sweeney.cam/",
+            "description": "The source code for this website.",
+            "tech_stack": "HTML, CSS, JavaScript/Typescript, React, Next.js, Vercel"
+        },
+        {
+            "title": "Pokémon Locations/pypkmn",
+            "url_github": "https://github.com/cameronsweeney/pypkmn",
+            "url_deployed": "#",
+            "description": "Also this: https://github.com/cameronsweeney/pokemon-locations. Some Python code that reads wild Pokémon location data from ROMs of Pokémon Red, Blue, and Yellow. It also sends the data directly into a database backend for my Pokédex.",
+            "tech_stack": "Python"
+        },
+        {
+            "title": "DataviewJS Dashboard",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "I made a script to query tasks in my obsidian vault",
+            "tech_stack": "Obsidian, DataviewJS, JS"
+        },
+        {
+            "title": "Video Game FastAPI",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "class project",
+            "tech_stack": "ChatGPT, what else??"
+        }
+    ],
+    "needs_work": [
+        {
+            "title": "Lecture at the Beach Conference API",
+            "url_github": "https://github.com/cameronsweeney/",
+            "url_deployed": "#",
+            "description": "idk... request.cam backend??? how do I share this? call this an API; take a screenshot of code & maybe form??? link to github wherever that is;;; mention freelance",
+            "tech_stack": "Django/Python, React/JavaScript, PostgreSQL"
+        },
+        {
+            "title": "Marcy & Myrtle Delivery App",
+            "url_github": "https://github.com/cameronsweeney/",
+            "url_deployed": "#",
+            "description": "also not sure how best to share this... TAKE SCREENSHOT OF CODE AND/OR APP;;;; mention freelance contract",
+            "tech_stack": "Ruby on Rails, Flutter/Dart, iOS stuff"
+        },
+        {
+            "title": "hypershrub - tree visualizer",
+            "url_github": "https://github.com/cameronsweeney/hypershrub",
+            "url_deployed": "#",
+            "description": "something something hyperbolic (not really) tree visualizer",
+            "tech_stack": "React+Redux/JavaScript"
+        }
+    ],
+    "ideas": [
+        {
+            "title": "Pokédex w unique name",
+            "url_github": "https://github.com/cameronsweeney/pypkmn",
+            "url_deployed": "#",
+            "description": "Will be Pokédex.",
+            "tech_stack": "Python/Django???, React(?), what else??? IDK"
+        },
+        {
+            "title": "http2cam",
+            "url_github": "https://github.com/cameronsweeney/http2cam",
+            "url_deployed": "#",
+            "description": "Old backend for website",
+            "tech_stack": "Django/Python, PostgreSQL"
+        }
+    ]
+}

@@ -8,13 +8,25 @@
   line-height: 1.1;
 }
 
-.project_list {
+.project_section {
+  max-width: min(100vw, 80rem);
+}
+
+.project_section h2 {
+  font-size: var(--measure-3);
+  width: 100%;
+
+  margin-top: var(--measure-2);
+  margin-bottom: var(--measure-half);
+}
+
+.project_grid {
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(20rem, 1fr));
   column-gap: var(--measure-1-half);
 }
 
-.project_list > div {
+.project_grid > div {
   min-width: 20rem;
 
   display: flex;
@@ -30,7 +42,7 @@
   background-color: var(--color-portfolio-main-1);
 }
 
-.project > h2 {
+.project > h3 {
   grid-row: 1;
   grid-column: 1 / 3;
 
