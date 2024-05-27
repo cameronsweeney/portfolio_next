@@ -64,15 +64,34 @@ const ProjectSection = (props: ProjectSectionProps) => {
   );
 }
 
+interface StringToStringObject {
+  [key: string]: string;
+}
+
+const headersInProduction: StringToStringObject = {
+  "current_projects": "Current Projects",
+  "ready": "Previous Projects"
+};
+
 export default function Page() {
   const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
   let projectSectionComponents: React.ReactNode[] = [];
 
   // loop through parts of projectJSON to make <ProjectSection>s
   Object.entries(projectJSON).forEach(([key, value]) => {
+    if (!inDevEnvironment && !(key in headersInProduction)) {
+      return;
+    }
+    
+    let title: string = key;
+    if (key in headersInProduction) {
+      title = headersInProduction[key]
+    }
+
     projectSectionComponents.push(
-      <ProjectSection title={key} projects={value} />
-    )
+      <ProjectSection key={key} title={title} projects={value} />
+    );
+    
   });
 
   return (

@@ -53,10 +53,24 @@
             "tech_stack": "Obsidian, DataviewJS, JS"
         },
         {
-            "title": "Video Game FastAPI",
+            "title": " Prompt Engineering HW 3 - Video Game FastAPI",
             "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
             "url_deployed": "#",
-            "description": "class project",
+            "description": "class project, need to add some detail to README or something so it's clearer & also this wouldn't be super hard to host. style up just a little more & get filtering options working & then boom you've got your database!",
+            "tech_stack": "ChatGPT, what else??"
+        },
+        {
+            "title": " Prompt Engineering HW 4A - Tool Calling - ChatGPT",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "put code from that one session w Brooks in a repo, write up a quick README, and then put it on the internet",
+            "tech_stack": "ChatGPT, what else??"
+        },
+        {
+            "title": " Prompt Engineering HW 4B - Tool Calling - Open Source",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "tweak code from the ChatGPT version so that it hits Oobabooga and/or LM Studio",
             "tech_stack": "ChatGPT, what else??"
         }
     ],
@@ -81,6 +95,27 @@
             "url_deployed": "#",
             "description": "something something hyperbolic (not really) tree visualizer",
             "tech_stack": "React+Redux/JavaScript"
+        },
+        {
+            "title": "Prompt Engineering HW 1 - LLM Benchmark Test",
+            "url_github": "https://github.com/cameronsweeney/hypershrub",
+            "url_deployed": "#",
+            "description": "https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+1+-+Complex+Prompts+and+Benchmarks;;; that colab notebook with the big for loop;; first step -> choose which task I want to compare;;; would tool use be a good one? or should I try something different?",
+            "tech_stack": "IPython/Colab, many different models, LM Studio??? Oobabooga??"
+        },
+        {
+            "title": "Prompt Engineering HW 2 - Jailbreaks",
+            "url_github": "https://github.com/cameronsweeney/hypershrub",
+            "url_deployed": "#",
+            "description": "https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+2+-+Jailbreaks;;; minimal GH repo that shows i tried once & have thought about this stuff",
+            "tech_stack": "usual chatgpt stack"
+        },
+        {
+            "title": " Prompt Engineering HW 3 THE SEQUEL - Reverse Waterfall Process",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "do this one more time at your own pace. note the steps & where things can/will go wrong. ",
+            "tech_stack": "ChatGPT, what else??"
         }
     ],
     "ideas": [
@@ -97,6 +132,28 @@
             "url_deployed": "#",
             "description": "Old backend for website",
             "tech_stack": "Django/Python, PostgreSQL"
+        },
+        {
+            "title": "GTD Project Planning Agent Swarm/Pipeline",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "5 phase vertical process. like a more complex actor/critic setup. but also i think some of the 5 parts of this process and also their own planner/actor/critic triangle or even more. i think also there will be human feedback/interaction at several of the layers ideally. would langgraph work here? or is autogen better for this? idk!!!",
+            "tech_stack": "ChatGPT, what else??"
+        },
+        {
+            "title": "Prompt Engineering HW 5 - Society of Mind & 6 - Autogen",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+5+-+Society+of+Mind",
+            "tech_stack": "ChatGPT, what else??"
+        },
+        {
+            "title": "Prompt Engineering HW 7 - Swarm Architecture",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+7+-+Swarm+Architecture;;;; this may turn into several GH repos -> one for each example pattern. but look here for actor-critic, planner-actor-refiner, code planner-writer-executor examples. Browse Obsidian curriculum for other examples/shapes. Triangles here: https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/LLM+Patterns/Agent+Triangles+in+Autogen // https://github.com/lizTheDeveloper/triangles_and_squares",
+            "tech_stack": "ChatGPT, what else??"
         }
+        
     ]
 }
