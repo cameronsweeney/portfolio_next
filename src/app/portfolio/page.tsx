@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/app/portfolio/ui/portfolio.module.css';
+import { barlow } from '@/app/ui/fonts';
 
 import projectsFromJsonFile from './projects.json';
 
@@ -38,7 +39,7 @@ const ProjectGrid = (props: ProjectGridProps) => {
     <div key={index} className={styles.project}>
       <h3><a href={project.url_github}>{project.title}</a></h3>
       <div>
-        <Image src={"/VS_Code_Screenshot.png"} width={240} height={132.25} alt="code screenshot" />
+        <Image src={"/VS_Code_Screenshot.png"} width={1920} height={1058} alt="code screenshot" priority={true} style={{ width: '100%', height: 'auto' }}/>
       </div>
       <p>{project.description}</p>
     </div>
@@ -55,8 +56,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
 
   return (
     <div className={styles.project_section} key={title}>
-      <h2>{title}</h2>
-      <p>---</p>
+      <h2 className={barlow.className}>{title}</h2>
       <div className={styles.project_grid}>
         <ProjectGrid projects={projects}/>
       </div>
@@ -98,11 +98,11 @@ export default function Page() {
     <div id="root" className={styles.portfolio_page}>
       <section>
         <div className="mb-4 text-xl flex justify-between">
-          <p><Link key="profile" href="/" className="text-emerald-400 hover:text-emerald-200">&larr; Back to profile</Link></p>
-          <p>{inDevEnvironment ? "development" : "production"}</p>
+          <p><Link key="profile" href="/" className={styles.backlink}>&larr; Back to profile</Link></p>
+          <p></p>
         </div>
         <article>
-          <h1>Portfolio Project List</h1>
+          <h1>Developer Portfolio</h1>
           {projectSectionComponents}
         </article>
       </section>

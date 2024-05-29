@@ -120,22 +120,21 @@ export default function Home() {
                 width={1200}
                 height={800}
                 alt="Cameron"
+                priority={true}
               />
             </div>
           </div>
           <div className={styles.main_text}>
             <div>
-              <p>Welcome to my website! My name is Cameron Sweeney, and I'm a full-stack developer and educator based in Brooklyn.</p>
-              
-              <p>I teach math, language, test prep, and science, and I build websites and programs with <strong>Python</strong>, <strong>JavaScript/Typescript</strong>, and more. This website is built with <strong>HTML</strong>, <strong>CSS/Tailwind</strong>, <strong>Typescript</strong>, <strong>React</strong>, and <strong>Next.js</strong>, and it is hosted on <strong>Vercel</strong>.</p>
+              <p>Welcome to my website! My name is Cameron Sweeney, and I'm a full-stack developer and educator based in Brooklyn. I teach math, language, test prep, and science, and I build websites and programs with <strong>Python</strong>, <strong>JavaScript/Typescript</strong>, and more. This website is built with <strong>HTML</strong>, <strong>CSS/Tailwind</strong>, <strong>Typescript</strong>, <strong>React</strong>, and <strong>Next.js</strong>, and it is hosted on <strong>Vercel</strong>.</p>
 
               <p>Recently, I've been diving into the latest AI technologies to make software development faster and more efficient. My work mainly involves ML Ops and using tools like <strong>AutoGen</strong>, <strong>LM Studio</strong>, and <strong>Oobabooga</strong> to harness the power of <strong>ChatGPT</strong> and open-source language models for tackling complex challenges. I'm actively engaged in prompt engineering and agent swarm architecture research, with my current focus on the automated generation of non-trivial, production-grade software.</p>
-
-              <p>I am a passionate educator with over 10 years of teaching experience in many contexts: America Reads/Counts in NYC Public School, Fulbright ETA in German Gymnasium, private English/French tutor in Düsseldorf, SAT/ACT tutor in &amp; around London, math/test prep/science/language tutor in Brooklyn. One of my favorite activities is helping people understand complex topics and be empowered to use that understanding. // I teach math (prealgebra through calculus), language (English, German, and French), test prep (SAT, ACT, SHSAT, IB, and AP), and science (physics and chemistry), </p>
 
               <p>My project experience includes building RESTful APIs with <strong>Python</strong> and <strong>FastAPI</strong>, <strong>Django-REST-Framework</strong>, and <strong>Ruby on Rails</strong>, as well as <strong>PostgreSQL</strong> and <strong>SQLite</strong> databases. I first learned to code like many devs I know &ndash; by writing <strong>HTML/CSS</strong> and <strong>JavaScript</strong> in middle and high school. My studies in college led me to write <strong>Python</strong>, <strong>JavaScript</strong>, <strong>LaTeX</strong>, and <strong>Google Apps Script</strong>. Over the last year I've built many web servers, front-ends, and I've been focusing on keeping up with the rapidly advancing AI and ML space. I've focused deeply on Prompt Engineering, and now Generative AI supercharges my development speed.</p>
 
               <p>I've kept up with the rapid pace of development in <strong>Prompt Engineering</strong> and <strong>Large Language Models</strong>, by getting involved in several interesting projects with folks from The Multiverse School, such as the Life Gamification project (automated project management), TreeOfAttacks (automated hacking), JASON (automated resume management), and Friendship Is Magic (an AI-powered CRM for managing communications and plans with friends).</p>
+
+              <p>I am a passionate educator with over 10 years of teaching experience across a wide range of subjects and contexts. In the past few years I've mostly been teaching <strong>math</strong> from <strong>prealgebra through calculus</strong>, <strong>physics</strong>, and <strong>test prep for the SAT, ACT, and SHSAT</strong>. I've also tutored some <strong>chemistry</strong>, <strong>French</strong>, and even <strong>math in German</strong>. Before returning to New York, I spent XYZ time teaching test prep in and around London, and spent 2 years teaching <strong>English as a foreign language</strong> in Düsseldorf.</p>
             </div>
           </div>
         </div>

@@ -1,45 +1,81 @@
 .portfolio_page {
-  background-color: rgb(46 16 101) !important;
+  background-color: #091A13;
   color: white;
 }
 
+.backlink {
+  color: var(--color-main-2);
+}
+
+.backlink:hover {
+  color: var(--color-header);
+}
+
 .portfolio_page h1 {
-  font-size: var(--measure-4);
-  line-height: 1.1;
+  font-size: var(--measure-3);
+  font-weight: 500;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+@media (min-width: 640px) {
+  .portfolio_page h1 {
+    font-size: var(--measure-4);
+  }
 }
 
 .project_section {
-  max-width: min(100vw, 80rem);
+  max-width: min(100vw, 64rem);
+  margin-bottom: var(--measure-4);
 }
 
 .project_section h2 {
-  font-size: var(--measure-3);
   width: 100%;
 
+  padding-bottom: var(--measure-half);
   margin-top: var(--measure-2);
-  margin-bottom: var(--measure-half);
+
+  border-bottom: solid white;
+
+  font-size: var(--measure-2);
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .portfolio_page h2 {
+    font-size: var(--measure-3);
+  }
 }
 
 .project_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(20rem, 1fr));
-  column-gap: var(--measure-1-half);
+  grid-template-columns: repeat(auto-fill,minmax(16rem, 1fr));
+  column-gap: var(--measure-2);
 }
 
-.project_grid > div {
-  min-width: 20rem;
+@media (min-width: 640px) {
+  .project_grid {
+    grid-template-columns: repeat(2, minmax(16rem, 1fr));
+  }
+}
 
-  display: flex;
-  flex-direction: column;
-
-  margin: var(--measure-1);
-  padding: var(--measure-1);
-
-  box-shadow: var(--measure-half) var(--measure-half) var(--color-portfolio-shadow);
+@media (min-width: 768px) {
+  .project_grid {
+    grid-template-columns: repeat(3, minmax(16rem, 1fr));
+  }
 }
 
 .project {
-  background-color: var(--color-portfolio-main-1);
+  background-color: #246B52;
+  border-radius: var(--measure-half);
+  box-shadow: var(--measure-half) var(--measure-half) var(--color-portfolio-shadow);
+
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+
+  margin: var(--measure-1);
+  padding: var(--measure-1);
 }
 
 .project > h3 {
@@ -49,7 +85,7 @@
   margin: 0 0 var(--measure-half) 0;
   padding: 0;
 
-  font-size: var(--measure-2);
+  font-size: var(--measure-1-half);
 }
 
 .project > div {
@@ -62,6 +98,5 @@
 }
 
 .project > p {
-  font-size: var(--measure-1-half);
   text-align: left;
 }
