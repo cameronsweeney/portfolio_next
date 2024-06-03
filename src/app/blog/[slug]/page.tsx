@@ -3,7 +3,7 @@ import { formatDate, getBlogPosts, CustomMDX } from '../utils'
 
 import Link from 'next/link';
 
-import styles from '@/app/blog/[slug]/blog_post.module.css';
+import styles from '@/app/blog/ui/blog_post.module.css';
 
 const baseUrl = 'localhost:3000/'
 
@@ -50,11 +50,11 @@ export default function Blog({ params }: any) {
   return (
     <section className={styles.blog_post_page}>
       <div className="mb-4 text-xl flex justify-between">
-        <Link key="blog" href="/blog" className="text-emerald-400 hover:text-emerald-200">&larr; Back to all posts</Link>
+        <Link key="blog" href="/blog" className={styles.backlink}>&larr; Back to all posts</Link>
         <p>{formatDate(post.metadata.publishedAt)}</p>
       </div>
       <article className={styles.blog_post}>
-        <h1 className="my-4 lg:my-5 text-4xl lg:text-5xl text-violet-400">{post.metadata.title}</h1>
+        <h1 className="my-4 lg:my-5 text-4xl lg:text-5xl text-pink-400">{post.metadata.title}</h1>
         <CustomMDX source={post.content} />
       </article>
     </section>

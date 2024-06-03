@@ -10,11 +10,13 @@
     max-width: min(100vw, 50rem);
 }
 
-/* @media (min-width: 640px) {
-    .blog_post_page {
-        padding-left: 15%;
-    }
-} */
+.backlink {
+    color: var(--color-main-2);
+}
+  
+.backlink:hover {
+    color: var(--color-header);
+}
 
 .blog_post h2 {
     margin-top: var(--measure-2);

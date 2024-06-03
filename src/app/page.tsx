@@ -115,13 +115,7 @@ export default function Home() {
         <div className={styles.content}>
           <div className={styles.photo}>
             <div>
-              <Image 
-                src={"/cameron.jpg"}
-                width={1200}
-                height={800}
-                alt="Cameron"
-                priority={true}
-              />
+              <Image src={"/cameron.jpg"} width={1200} height={800} alt="Cameron" priority={true} />
             </div>
           </div>
           <div className={styles.main_text}>
