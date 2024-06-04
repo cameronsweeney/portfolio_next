@@ -63,6 +63,15 @@
   margin: 0;
 }
 
+.main_text a {
+  color: rgb(3 7 18);
+  text-decoration: underline;
+}
+
+.main_text a:hover {
+  color: rgb(87 83 78);
+}
+
 .photo {
   flex: 1 1 40%;
 
