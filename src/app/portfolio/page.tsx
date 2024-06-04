@@ -15,7 +15,9 @@ type Project = {
 
 type ProjectData = {
   current_projects: Project[];
-  ready: Project[];
+  ready_polished: Project[];
+  ready_educational: Project[];
+  next_to_publish: Project[];
   almost_ready: Project[];
   needs_work: Project[];
   ideas: Project[];
@@ -69,8 +71,9 @@ interface StringToStringObject {
 }
 
 const headersInProduction: StringToStringObject = {
-  "current_projects": "Current Projects",
-  "ready": "Previous Projects"
+  "current_projects": "Projects in Progress",
+  "ready_polished": "Finished Projects",
+  "ready_educational": "Educational Projects/Learn to Code"
 };
 
 export default function Page() {

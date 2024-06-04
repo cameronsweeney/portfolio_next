@@ -8,6 +8,13 @@
             "tech_stack": "React/Typescript/HTML/CSS/Next.js"
         },
         {
+            "title": "The Databasificationing",
+            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_deployed": "#",
+            "description": "Project management, Zelda style",
+            "tech_stack": "NeonDB/Postgres, etc."
+        },
+        {
             "title": "Friendship Is Magic",
             "url_github": "https://github.com/cameronsweeney/musicfairy",
             "url_deployed": "#",
@@ -15,8 +22,9 @@
             "tech_stack": "Python, Langchain/Langgraph, idk yet????"
         }
     ],
-    "ready": [],
-    "almost_ready": [
+    "ready_polished": [],
+    "ready_educational": [],
+    "next_to_publish": [
         {
             "title": "Music Fairy",
             "url_github": "https://github.com/cameronsweeney/musicfairy",
@@ -32,25 +40,17 @@
             "tech_stack": "Docker, AutoGen, Ooba Booga, Google Colab, Mixtral/Hugging Face"
         },
         {
-            "title": "This website!",
-            "url_github": "https://github.com/cameronsweeney/portfolio",
-            "url_deployed": "https://sweeney.cam/",
-            "description": "The source code for this website.",
-            "tech_stack": "HTML, CSS, JavaScript/Typescript, React, Next.js, Vercel"
-        },
-        {
-            "title": "Pokémon Locations/pypkmn",
-            "url_github": "https://github.com/cameronsweeney/pypkmn",
-            "url_deployed": "#",
-            "description": "Also this: https://github.com/cameronsweeney/pokemon-locations. Some Python code that reads wild Pokémon location data from ROMs of Pokémon Red, Blue, and Yellow. It also sends the data directly into a database backend for my Pokédex.",
-            "tech_stack": "Python"
-        },
-        {
             "title": "DataviewJS Dashboard",
             "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
             "url_deployed": "#",
             "description": "I made a script to query tasks in my obsidian vault",
             "tech_stack": "Obsidian, DataviewJS, JS"
+        },        {
+            "title": "This website!",
+            "url_github": "https://github.com/cameronsweeney/portfolio",
+            "url_deployed": "https://sweeney.cam/",
+            "description": "The source code for this website.",
+            "tech_stack": "HTML, CSS, JavaScript/Typescript, React, Next.js, Vercel"
         },
         {
             "title": " Prompt Engineering HW 3 - Video Game FastAPI",
@@ -60,18 +60,27 @@
             "tech_stack": "ChatGPT, what else??"
         },
         {
-            "title": " Prompt Engineering HW 4A - Tool Calling - ChatGPT",
-            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
-            "url_deployed": "#",
-            "description": "put code from that one session w Brooks in a repo, write up a quick README, and then put it on the internet",
-            "tech_stack": "ChatGPT, what else??"
-        },
-        {
             "title": " Prompt Engineering HW 4B - Tool Calling - Open Source",
             "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
             "url_deployed": "#",
             "description": "tweak code from the ChatGPT version so that it hits Oobabooga and/or LM Studio",
             "tech_stack": "ChatGPT, what else??"
+        },
+        {
+            "title": " Prompt Engineering HW 4A - Tool Calling - ChatGPT",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "put code from that one session w Brooks in a repo, write up a quick README, and then put it on the internet",
+            "tech_stack": "ChatGPT, what else??"
+        }
+    ],
+    "almost_ready": [
+        {
+            "title": "Pokémon Locations/pypkmn",
+            "url_github": "https://github.com/cameronsweeney/pypkmn",
+            "url_deployed": "#",
+            "description": "Also this: https://github.com/cameronsweeney/pokemon-locations. Some Python code that reads wild Pokémon location data from ROMs of Pokémon Red, Blue, and Yellow. It also sends the data directly into a database backend for my Pokédex.",
+            "tech_stack": "Python"
         }
     ],
     "needs_work": [
