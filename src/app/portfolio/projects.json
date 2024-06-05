@@ -162,7 +162,13 @@
             "url_deployed": "#",
             "description": "https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+7+-+Swarm+Architecture;;;; this may turn into several GH repos -> one for each example pattern. but look here for actor-critic, planner-actor-refiner, code planner-writer-executor examples. Browse Obsidian curriculum for other examples/shapes. Triangles here: https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/LLM+Patterns/Agent+Triangles+in+Autogen // https://github.com/lizTheDeveloper/triangles_and_squares",
             "tech_stack": "ChatGPT, what else??"
+        },
+        {
+            "title": "Prompt Engineering HW 9? - Metalanguages/metanarratives",
+            "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
+            "url_deployed": "#",
+            "description": "https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+9+-+Meta-languages+%26+Meta+Narratives",
+            "tech_stack": "ChatGPT, what else??"
         }
-        
     ]
 }
