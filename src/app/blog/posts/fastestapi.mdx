@@ -1,0 +1,53 @@
+---
+title: 'The Fastest FastAPI'
+publishedAt: '2024-08-30'
+summary: 'Lorem ipsum 123456'
+---
+
+# Getting ChatGPT to do the heavy lifting for you
+
+- part of prompt engineering class at Multiverse (link)
+- process automation
+
+
+## here are the steps to follow
+
+https://publish.obsidian.md/themultiverseschool/Curriculum/Autonomous+Agents/Prompt+Engineering/Workshop+3+-+Thought+Architectures+and+Augmented+Skills
+
+- PHASE 1: first pick your project. I did a video game database.
+    - Everything is just a prototype! (gamification)
+- PHASE 2: start with minimum requirements spec
+    - remember, you can always add features later if you think of them. it doesn't have to be everything. JUST the minimum viable
+    - this includes user stories if you want to write them that way
+    - mainly: data requirements, ui requirements, list of features, list of pages (bundles of user stories)
+- PHASE 3: data sourcing (example data - I skipped this step)
+- PHASE 4: next up: database design / data design schema
+    - LLMs can turn a brain dump into an SQL schema pretty easily.
+    - it can also suggest fields/columns for you
+    - or ask you questions about what you want
+    - Neon has free database hosting. There are probably other places, or if you're not planning on hosting it you can have a database on your computer
+    - SQLChat can even execute commands for you
+- PHASE 5: REST API
+    - generate this from minimum spec
+    - using FastAPI because, well, it is fast. but ChatGPT has read lots of code for other backends, too. I did find myself missing the Django ORM here
+- PHASE 6: UI
+    - feed it everything so far
+    - give it choices / frameworks / a template if you want
+- PHASE 7: TEST & DEPLOY
+    - test locally (you can ask ChatGPT how to run the server)
+    - make sure the pieces play well together
+    - put it in a git repo & push it to github
+
+
+## difficulties / problems that may arise
+
+### so llms aren't deterministic & they make mistakes. what then??
+
+- chatgpt can create at the speed of light (almost) - much faster than we can read
+- how much of a framework do i need to know to do this?
+- how much do i have to read to make sure i catch the big errors?
+- general debugging process is important. chatgpt can catch lots of errors but sometimes it just gives generic advice not tailored to whatever's going on in your case
+
+### open-source models don't always do as well with these tasks, or aren't as consistent
+
+### this may not feel very fast the first time you do it. will it feel faster the next time? would it be much faster when Autogen does this for you?
