@@ -10,13 +10,15 @@ const baseUrl = 'localhost:3000/'
 export async function generateStaticParams() {
   let posts = getBlogPosts()
 
-  return posts.map((post) => ({
+  return Object.values(posts).flat().map((post) => ({
     slug: post.slug,
   }))
 }
 
 export function generateMetadata({ params }: any) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+  let posts = getBlogPosts()
+
+  let post = Object.values(posts).flat().find((post) => post.slug === params.slug)
   if (!post) {
     return
   }
@@ -41,7 +43,8 @@ export function generateMetadata({ params }: any) {
 }
 
 export default function Blog({ params }: any) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+  let posts = getBlogPosts();
+  let post = Object.values(posts).flat().find((post) => post.slug === params.slug)
 
   if (!post) {
     notFound()

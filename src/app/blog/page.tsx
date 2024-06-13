@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { formatDate, getBlogPosts } from './utils';
+import { formatDate, getBlogPosts, BlogPost } from './utils';
 
 function ArrowRightIcon(props: any) {
   return (
@@ -21,24 +21,23 @@ function ArrowRightIcon(props: any) {
   )
 }
 
-export default function BlogPosts() {
-  let allBlogPosts = getBlogPosts()
-  const sortedBlogPosts = allBlogPosts.sort((a, b) => {
-    if (
-      new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-    ) {
-      return -1
-    }
-    return 1
-  });
+type BlogPostProps = {
+  posts: BlogPost[];
+}
 
-  const BlogPostComponents = sortedBlogPosts.map((post) => (
+type BlogPostSectionProps = {
+  title: string;
+  posts: BlogPost[];
+}
+
+const BlogPostComponents = (props: BlogPostProps) => {
+  return props.posts.map((post) => (
     <Link key={post.slug} href={`/blog/${post.slug}`}>
       <div className="rounded-lg bg-white p-6 shadow-inner">
         <div>
-          <h2 className="my-2 text-xl font-semibold text-black hover:text-gray-600">
+          <h3 className="my-2 text-xl font-semibold text-black hover:text-gray-600">
             {post.metadata.title}
-          </h2>
+          </h3>
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-500">{formatDate(post.metadata.publishedAt, false)}</span>
             <ArrowRightIcon className="h-4 w-4" />
@@ -47,6 +46,28 @@ export default function BlogPosts() {
       </div>
     </Link>
   ));
+}
+
+const BlogPostSection = (props: BlogPostSectionProps) => {
+  const sectionComponent = (
+    <div>
+      <h2>{props.title}</h2>
+      <div className="m-8 grid gap-8 lg:grid-cols-3">
+        <BlogPostComponents posts={props.posts} />
+      </div>    
+    </div>
+  );
+  return sectionComponent;
+}
+
+export default function BlogPosts() {
+  let allBlogPosts = getBlogPosts()
+
+  const blogPostSectionComponents = Object.keys(allBlogPosts).map(
+    (section_status) => {
+      return <BlogPostSection key={section_status} title={section_status} posts={allBlogPosts[section_status]}/>
+    }
+  );
 
   return (
     <>
@@ -54,7 +75,9 @@ export default function BlogPosts() {
     <p className="text-2xl hover:underline">
         <Link key="profile" href="/">&larr; Back to profile</Link>
     </p>
-    <div className="m-8 grid gap-8 lg:grid-cols-3">{BlogPostComponents}</div>
+    <div>
+      {blogPostSectionComponents}
+    </div>
     </>
   );
 }

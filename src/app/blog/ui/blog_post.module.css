@@ -18,7 +18,7 @@
     color: var(--color-header);
 }
 
-.blog_post h2 {
+.blog_post h3 {
     margin-top: var(--measure-2);
     font-size: var(--measure-2-half);
     line-height: 1.2;

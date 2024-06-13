@@ -13,6 +13,17 @@ type Metadata = {
   title: string
   publishedAt: string
   summary: string
+  status: string
+}
+
+export type BlogPost = {
+  metadata: Metadata
+  slug: string
+  content: string
+}
+
+interface SectionedBlogPosts {
+  [key: string]: BlogPost[];
 }
 
 function parseFrontmatter(fileContent: string) {
@@ -57,7 +68,40 @@ function getMDXData(dir: any) {
 }
 
 export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), 'src', 'app', 'blog', 'posts'))
+  let allBlogPosts = getMDXData(path.join(process.cwd(), 'src', 'app', 'blog', 'posts'));
+  const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
+
+  let blogPostSections: SectionedBlogPosts = {
+    "published": []
+  }
+  if (inDevEnvironment) {
+    blogPostSections["almost_ready"] = [];
+    blogPostSections["needs_work"] = [];
+    blogPostSections["ideas"] = [];
+  };
+
+  allBlogPosts.forEach(post => {
+    // Get the status of the post
+    let status = post.metadata.status;
+    
+    // Add the post to the appropriate category in the blogPostSections object
+    if (blogPostSections[status]) {
+      blogPostSections[status].push(post);
+    }
+  });
+
+  Object.keys(blogPostSections).forEach(status => {
+    blogPostSections[status].sort((a, b) => {
+      if (
+        new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+      ) {
+        return -1
+      }
+      return 1
+    })
+  });
+
+  return blogPostSections;
 }
 
 export function formatDate(date: string, includeRelative = false) {
