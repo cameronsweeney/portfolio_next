@@ -50,9 +50,9 @@ const BlogPostComponents = (props: BlogPostProps) => {
 
 const BlogPostSection = (props: BlogPostSectionProps) => {
   const sectionComponent = (
-    <div>
-      <h2>{props.title}</h2>
-      <div className="m-8 grid gap-8 lg:grid-cols-3">
+    <div className="mt-6">
+      <h2 className="text-3xl">{props.title}</h2>
+      <div className="mt-4 mb-8 mx-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <BlogPostComponents posts={props.posts} />
       </div>    
     </div>
@@ -70,14 +70,17 @@ export default function BlogPosts() {
   );
 
   return (
-    <>
-    <h1 className="m-6 text-5xl lg:text-6xl font-extrabold tracking-tight">Blog Posts</h1>
-    <p className="text-2xl hover:underline">
-        <Link key="profile" href="/">&larr; Back to profile</Link>
-    </p>
-    <div>
-      {blogPostSectionComponents}
+    <div id="root" className="bg-black text-white">
+      <div className="max-w-[66rem]">
+        <div className="w-full text-xl flex justify-between">
+          <p><Link key="profile" href="/">&larr; Back to profile</Link></p>
+          <p></p>
+        </div>
+        <h1 className="my-6 mx-auto text-5xl lg:text-6xl font-extrabold tracking-tight text-center">Blog Posts</h1>
+        <div>
+          {blogPostSectionComponents}
+        </div>
+      </div>
     </div>
-    </>
   );
 }

@@ -72,7 +72,7 @@ export function getBlogPosts() {
   const inDevEnvironment = !!process && process.env.NODE_ENV === 'development';
 
   let blogPostSections: SectionedBlogPosts = {
-    "published": []
+    "Published": []
   }
   if (inDevEnvironment) {
     blogPostSections["almost_ready"] = [];
