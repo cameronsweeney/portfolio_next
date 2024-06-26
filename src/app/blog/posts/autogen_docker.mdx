@@ -1,34 +1,34 @@
 ---
 title: 'Running Open-Source LLMs with AutoGen & Oobabooga'
-publishedAt: '2024-04-30'
+publishedAt: '2024-06-26'
 summary: 'In a very technical sense, I did it.'
-status: 'needs_work'
+status: 'Published'
 ---
 
-In the realm of text generation and AI-powered tools, setting up an efficient and flexible environment is key to leveraging the best of open-source models. My recent journey involved integrating AutoGen with an open-source model, specifically Mistral from Hugging Face, through a Docker container, and connecting it to an Ooba Booga backend. This exploration not only deepened my understanding of these tools but also illuminated a path for others to follow with ease.
+In the realm of text generation and AI-powered tools, setting up an efficient and flexible environment is key to leveraging the best of open-source models. My recent journey involved integrating AutoGen with an open-source model through a Docker container and connecting it to an Oobabooga backend. While it's possible for me to run some smaller quantized models locally on my machine (thanks, [LM Studio](https://lmstudio.ai/)!), it's nice to have a free option to run larger models in the cloud that tend to generate better results.
 
-## The Adventure Begins: Establishing the Ooba Booga Backend
+Here I used [Mistral 7B Instruct v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2), but you can load just about any open-source model from Hugging Face into Oobabooga. For detailed instructions on how to replicate this setup, check out my repo here: [https://github.com/cameronsweeney/autogen_docker_test](https://github.com/cameronsweeney/autogen_docker_test).
 
-The first step of this journey was to bring Ooba Booga to life within a Google Colab notebook. This quirky-named backend serves as a bridge to our desired AI model, facilitating the interaction without much hassle. The process starts innocuously with running a cell that plays 24 hours of silence – a clever trick to keep the Colab session active.
+This exploration not only deepened my understanding of these tools but also illuminated a path for others to follow with ease.
 
-The real magic happens when you specify the model you wish to use, such as Mistral-7B-Instruct-v0.2 from Hugging Face, and expose it through an OpenAI-like API. Once the model loads and runs, it provides a Cloudflare URL, which becomes the endpoint for our AutoGen setup, making the entire setup feel like connecting dots in a high-tech constellation.
+## Establishing the Oobabooga backend
 
-## Docker to the Rescue: AutoGen and Its Dependencies
+The adventure starts by bringing Oobabooga to life [within a Google Colab notebook](https://colab.research.google.com/github/oobabooga/text-generation-webui/blob/main/Colab-TextGen-GPU.ipynb#scrollTo=LGQ8BiMuXMDG). This quirky-named backend acts as a crucial bridge to our desired AI model, allowing seamless interactions. This setup works great for small-scale research and testing without a Google Colab subscription, but most likely wouldn't be suitable for a production environment.
 
-Building a Docker image for AutoGen introduces a layer of abstraction, encapsulating the environment and its dependencies in a container. This image, derived from AutoGen's development Dockerfile, encompasses everything needed to run AutoGen seamlessly. The build process, though lengthy due to the image size, is a one-time investment into creating a robust development environment. The inclusion of sample scripts in the /import/scripts directory ensures that custom tools and files are readily accessible within the Docker ecosystem.
+The real utility unfolds when you specify the model you wish to use and expose it through an OpenAI-like API. The model, once loaded, provides a Cloudflare URL which becomes the endpoint for our AutoGen setup, creating an interconnected high-tech system. Routing it all through an API with similar endpoints to OpenAI's API lets us test open-source models against various ChatGPT models without rewriting too much code!
 
-## Setting Sail: Running AutoGen within Docker
+## Using Docker for a smoother and more secure workflow
 
-With the Docker container up, accessing and running AutoGen becomes a breeze. A simple docker compose command not only builds our custom setup but also allows for interactive engagement through the terminal. The flexibility of Docker Compose means that any modifications, either to scripts or the environment, are easily accommodated without the need to rebuild the entire image from scratch.
+Building a Docker image for AutoGen introduces a layer of abstraction, encapsulating the environment and its dependencies in a container. If you want to get AutoGen to execute any of the code that an LLM generates, this is an important security feature! Containerizing with Docker also helps make code more portable across different operating systems and machines. 
 
-## The First Test: Unleashing AutoGen's Potential
+This image, derived from AutoGen's development Dockerfile, encompasses everything needed to run AutoGen seamlessly. The build process, though lengthy due to the image size, is a one-time investment into creating a robust development environment. 
 
-Navigating to the /home/autogen/autogen/import directory within the container reveals the imported test scripts, ready to demonstrate the power of AutoGen connected to our model via Ooba Booga. Executing these scripts showcases the seamless interaction between AutoGen and the AI model, whether it's generating text based on hardcoded instructions or accepting dynamic input for more customized interactions.
+After the initial build (which does involve downloading several gigabytes of data), a simple `docker compose` command not only builds our custom setup but also allows for interactive engagement through the terminal. The flexibility of Docker Compose means that any modifications, either to scripts or the environment, are easily accommodated without the need to rebuild the entire image from scratch.
 
-## Lessons Learned and Paths Forged
+## AutoGen magic without the price tag
 
-This exploration through setting up AutoGen in a Docker container, connected to an open-source AI model via Ooba Booga, is more than just a technical walkthrough. It's a testament to the power of open-source tools and the communities that build them. The journey highlighted the importance of flexibility in development environments, the potential of AI in generating text, and the innovative ways we can connect different technologies to achieve remarkable results.
+AutoGen is a pretty incredible framework for getting multiple AI agents to work together. Their repository is [full of example notebooks](https://github.com/microsoft/autogen/tree/main/notebook) that demonstrate its capabilities. Imagine a swarm of specialized agents working together towards a goal.
 
-The process, while intricate, opens up numerous possibilities for developers, researchers, and enthusiasts in the field of AI and text generation. It encourages experimentation, invites innovation, and most importantly, demystifies the process of setting up complex systems, making them accessible to a broader audience.
+One downside of AutoGen is how expensive it can be with an enterprise model like ChatGPT. Because an AutoGen conversation consists of multiple agents talking to each other, it burns through tokens *very* quickly. AutoGen allows you to implement powerful patterns where LLMs critique and improve their own work automatically, but it takes a lot of back-and-forth for that to happen (much like between humans when they work collaboratively), and all of those requests to OpenAI or another paid LLM can add up quickly. Even if it's not as "smart" of a model, having a cost-free option can open a ton of doors into new possibilities!
 
-In sharing this journey, my hope is to inspire others to embark on their own adventures in the world of AI, armed with the knowledge that with the right tools and a bit of guidance, the possibilities are endless.
+In sharing this journey, my hope is to inspire others to embark on their own adventures in the world of AI, armed with the knowledge that with the right tools and a bit of guidance, the possibilities are endless. If you could manage a swarm of helpful AI agents, what would you have them do?
