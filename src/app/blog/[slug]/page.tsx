@@ -58,7 +58,7 @@ export default function Blog({ params }: any) {
           <p>{formatDate(post.metadata.publishedAt)}</p>
         </div>
         <article className={styles.blog_post}>
-          <h1 className="my-4 lg:my-5 text-4xl lg:text-5xl text-pink-400">{post.metadata.title}</h1>
+          <h1 className="my-4 lg:my-5 text-4xl lg:text-5xl text-fuchsia-400">{post.metadata.title}</h1>
           <CustomMDX source={post.content} />
         </article>
       </section>

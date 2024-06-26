@@ -9,6 +9,8 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { highlight } from 'sugar-high'
 import React from 'react'
 
+import { inconsolata } from '../ui/fonts';
+
 type Metadata = {
   title: string
   publishedAt: string
@@ -191,7 +193,7 @@ function RoundedImage(props: any) {
 
 function Code({ children, ...props }: any) {
   let codeHTML = highlight(children)
-  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+  return <code className={inconsolata.className} dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
 }
 
 function slugify(str: string) {

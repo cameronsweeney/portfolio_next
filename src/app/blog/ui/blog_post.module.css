@@ -10,19 +10,19 @@
     max-width: min(100vw, 50rem);
 }
 
-.backlink {
-    color: var(--color-main-2);
-}
-  
-.backlink:hover {
+.backlink, .blog_post a {
     color: var(--color-header);
 }
+  
+.backlink:hover, .blog_post a:hover {
+    color: var(--color-main-2);
+}
 
-.blog_post h3 {
+.blog_post h2 {
     margin-top: var(--measure-2);
     font-size: var(--measure-2-half);
     line-height: 1.2;
-    color: rgb(52 211 153);
+    color: rgb(232 121 249);
 }
 
 .blog_post p {
@@ -33,4 +33,12 @@
 
 .blog_post img {
     max-width: 384px;
+}
+
+.blog_post code {
+    background-color: rgb(74 4 78);
+    color: rgb(241 245 249);
+    border-radius: 0.3em;
+    padding: 3px;
+    white-space: nowrap;
 }

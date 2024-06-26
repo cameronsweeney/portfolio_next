@@ -1,4 +1,4 @@
-import { Lato, Barlow_Semi_Condensed, Barlow } from 'next/font/google';
+import { Lato, Barlow_Semi_Condensed, Barlow, Inconsolata } from 'next/font/google';
  
 export const lato = Lato(
     { 
@@ -10,7 +10,8 @@ export const lato = Lato(
 export const barlow_semi_condensed = Barlow_Semi_Condensed(
     { 
         weight: ["400", "500"],
-        subsets: ["latin"]
+        subsets: ["latin"],
+        style: ["italic", "normal"]
     }
 );
 
@@ -20,3 +21,10 @@ export const barlow = Barlow(
         subsets: ["latin"]
     }
 );
+
+export const inconsolata = Inconsolata(
+    {
+        weight: ["400"],
+        subsets: ["latin"]
+    }
+)
