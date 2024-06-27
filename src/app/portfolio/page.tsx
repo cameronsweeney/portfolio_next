@@ -4,7 +4,6 @@ import styles from '@/app/portfolio/ui/portfolio.module.css';
 import { barlow } from '@/app/ui/fonts';
 
 import projectsFromJsonFile from './projects.json';
-import VS_Code_screenshot from '/public/VS_Code_screenshot.png';
 
 type Project = {
     title: string;
@@ -42,7 +41,7 @@ const ProjectGrid = (props: ProjectGridProps) => {
     <div key={index} className={styles.project}>
       <h3><a href={project.url_github}>{project.title}</a></h3>
       <div>
-        <Image src={VS_Code_screenshot} width={1920} height={1058} alt="code screenshot" priority={true} style={{ width: '100%', height: 'auto' }}/>
+        <Image src={"/VS_Code_screenshot.png"} width={1920} height={1058} alt="code screenshot" priority={true} style={{ width: '100%', height: 'auto' }}/>
       </div>
       <p>{project.description}</p>
     </div>
