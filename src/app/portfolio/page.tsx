@@ -4,7 +4,7 @@ import styles from '@/app/portfolio/ui/portfolio.module.css';
 import { barlow } from '@/app/ui/fonts';
 
 import projectsFromJsonFile from './projects.json';
-import VS_Code_screenshot from '/public/VS_Code_Screenshot.png';
+import VS_Code_screenshot from '/public/VS_Code_screenshot.png';
 
 type Project = {
     title: string;
