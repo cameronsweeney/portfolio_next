@@ -4,20 +4,15 @@
             "title": "Scrum Dashboard",
             "url_github": "https://github.com/cameronsweeney/musicfairy",
             "url_deployed": "#",
+            "img_src": "/scrum_dashboard.png",
             "description": "Interactive project management display that puts all your active projects & areas on a hexagonal grid.",
             "tech_stack": "React/Typescript/HTML/CSS/Next.js"
-        },
-        {
-            "title": "The Databasificationing",
-            "url_github": "https://github.com/cameronsweeney/musicfairy",
-            "url_deployed": "#",
-            "description": "Project management, Zelda style",
-            "tech_stack": "NeonDB/Postgres, etc."
         },
         {
             "title": "Friendship Is Magic",
             "url_github": "https://github.com/cameronsweeney/musicfairy",
             "url_deployed": "#",
+            "img_src": "/friendship_is_magic.png",
             "description": "gamified relationship/connection cocreation",
             "tech_stack": "Python, Langchain/Langgraph, idk yet????"
         }
@@ -90,6 +85,13 @@
             "url_deployed": "#",
             "description": "idk... request.cam backend??? how do I share this? call this an API; take a screenshot of code & maybe form??? link to github wherever that is;;; mention freelance",
             "tech_stack": "Django/Python, React/JavaScript, PostgreSQL"
+        },
+        {
+            "title": "The Databasificationing",
+            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_deployed": "#",
+            "description": "Project management, Zelda style",
+            "tech_stack": "NeonDB/Postgres, etc."
         },
         {
             "title": "Marcy & Myrtle Delivery App",

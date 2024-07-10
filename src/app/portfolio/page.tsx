@@ -9,6 +9,7 @@ type Project = {
     title: string;
     url_github: string;
     url_deployed?: string;
+    img_src?: string;
     description: string;
     tech_stack: string;
 };
@@ -41,7 +42,7 @@ const ProjectGrid = (props: ProjectGridProps) => {
     <div key={index} className={styles.project}>
       <h3><a href={project.url_github}>{project.title}</a></h3>
       <div>
-        <Image src={"/VS_Code_screenshot.png"} width={1920} height={1058} alt="code screenshot" priority={true} style={{ width: '100%', height: 'auto' }}/>
+        <Image src={project.img_src ? project.img_src : "/VS_Code_screenshot.png"} width={1920} height={1058} alt="code screenshot" priority={true} style={{ width: '100%', height: 'auto' }}/>
       </div>
       <p>{project.description}</p>
     </div>
