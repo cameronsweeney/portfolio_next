@@ -2,18 +2,18 @@
     "current_projects": [
         {
             "title": "Scrum Dashboard",
-            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_github": "https://github.com/cameronsweeney/scrum_dashboard",
             "url_deployed": "#",
             "img_src": "/scrum_dashboard.png",
-            "description": "Interactive project management display that puts all your active projects & areas on a hexagonal grid.",
+            "description": "Interactive project management display on a hexagonal grid - part of a larger Life Gamification project.",
             "tech_stack": "React/Typescript/HTML/CSS/Next.js"
         },
         {
             "title": "Friendship Is Magic",
-            "url_github": "https://github.com/cameronsweeney/musicfairy",
+            "url_github": "#",
             "url_deployed": "#",
             "img_src": "/friendship_is_magic.png",
-            "description": "gamified relationship/connection cocreation",
+            "description": "AI-powered & gamified platform for keeping in touch with your friends - like a mix between a CRM & social media.",
             "tech_stack": "Python, Langchain/Langgraph, idk yet????"
         }
     ],

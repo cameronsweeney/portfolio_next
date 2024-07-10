@@ -35,12 +35,29 @@ type ProjectSectionProps = {
   projects: Project[]
 }
 
+type MaybeExternalLinkProps = {
+  url_github: string;
+  title: string;
+}
+
+const MaybeExternalLink = (props: MaybeExternalLinkProps) => {
+  if (props.url_github === '#') {
+    return(
+      <a href="#">{props.title}</a>
+    );
+  } else {
+    return(
+      <a href={props.url_github} rel="noopener noreferrer" target="_blank">{props.title}</a>
+    );
+  }
+}
+
 const ProjectGrid = (props: ProjectGridProps) => {
   const { projects } = props;
 
   const projectComponents = projects.map((project, index) => (
     <div key={index} className={styles.project}>
-      <h3><a href={project.url_github}>{project.title}</a></h3>
+      <h3><MaybeExternalLink url_github={project.url_github} title={project.title} /></h3>
       <div>
         <Image src={project.img_src ? project.img_src : "/VS_Code_screenshot.png"} width={1920} height={1058} alt="code screenshot" priority={true} style={{ width: '100%', height: 'auto' }}/>
       </div>
