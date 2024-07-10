@@ -90,8 +90,8 @@ interface StringToStringObject {
 
 const headersInProduction: StringToStringObject = {
   "current_projects": "Projects in Progress",
-  "ready_polished": "Finished Projects",
-  "ready_educational": "Educational Projects/Learn to Code"
+  /* "ready_polished": "Finished Projects",
+  "ready_educational": "Educational Projects/Learn to Code" */
 };
 
 export default function Page() {
