@@ -13,7 +13,7 @@
             "url_github": "#",
             "url_deployed": "#",
             "img_src": "/friendship_is_magic.png",
-            "description": "AI-powered & gamified platform for keeping in touch with your friends - like a mix between a CRM & social media.",
+            "description": "AI-powered & gamified platform for keeping in touch with your friends - like a mix between a CRM & social media. In collaboration with folks from the Multiverse School.",
             "tech_stack": "Python, Langchain/Langgraph, idk yet????"
         }
     ],
