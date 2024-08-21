@@ -1,31 +1,21 @@
 {
     "current_projects": [
         {
-            "title": "Scrum Dashboard",
-            "url_github": "https://github.com/cameronsweeney/scrum_dashboard",
-            "url_deployed": "#",
-            "img_src": "/scrum_dashboard.png",
-            "description": "Interactive project management display on a hexagonal grid - part of a larger Life Gamification project.",
-            "tech_stack": "React/Typescript/HTML/CSS/Next.js"
-        },
-        {
-            "title": "Friendship Is Magic",
-            "url_github": "#",
-            "url_deployed": "#",
-            "img_src": "/friendship_is_magic.png",
-            "description": "AI-powered & gamified platform for keeping in touch with your friends - like a mix between a CRM & social media. In collaboration with folks from the Multiverse School.",
-            "tech_stack": "Python, Langchain/Langgraph, idk yet????"
-        }
-    ],
-    "ready_polished": [],
-    "ready_educational": [],
-    "next_to_publish": [
-        {
             "title": "Music Fairy",
             "url_github": "https://github.com/cameronsweeney/musicfairy",
             "url_deployed": "#",
             "description": "A command line tool to analyze your streaming history from Spotify, written in Python and SQL. Example functions: what songs did I listen to most on this day? What artists did I listen to the most in a specific month?",
             "tech_stack": "Python, SQLite"
+        }
+    ],
+    "ready_polished": [
+        {
+            "title": "This website!",
+            "url_github": "https://github.com/cameronsweeney/portfolio",
+            "url_deployed": "https://sweeney.cam/",
+            "img_src": "/website_screenshot.png",
+            "description": "The source code for this website. Written with HTML, CSS, Tailwind, React + Typescript, and Next.js. Hosted on Vercel.",
+            "tech_stack": "HTML, CSS/Tailwind, JavaScript/Typescript, React, Next.js, Vercel"
         },
         {
             "title": "AutoGen Docker experiment",
@@ -40,13 +30,10 @@
             "url_deployed": "#",
             "description": "I made a script to query tasks in my obsidian vault",
             "tech_stack": "Obsidian, DataviewJS, JS"
-        },        {
-            "title": "This website!",
-            "url_github": "https://github.com/cameronsweeney/portfolio",
-            "url_deployed": "https://sweeney.cam/",
-            "description": "The source code for this website.",
-            "tech_stack": "HTML, CSS, JavaScript/Typescript, React, Next.js, Vercel"
-        },
+        }
+    ],
+    "ready_educational": [],
+    "next_to_publish": [
         {
             "title": " Prompt Engineering HW 3 - Video Game FastAPI",
             "url_github": "https://github.com/cameronsweeney/fastapi_videogame_db",
@@ -79,6 +66,23 @@
         }
     ],
     "needs_work": [
+        
+        {
+            "title": "Scrum Dashboard",
+            "url_github": "https://github.com/cameronsweeney/scrum_dashboard",
+            "url_deployed": "#",
+            "img_src": "/scrum_dashboard.png",
+            "description": "Interactive project management display on a hexagonal grid - part of a larger Life Gamification project.",
+            "tech_stack": "React/Typescript/HTML/CSS/Next.js"
+        },
+        {
+            "title": "Friendship Is Magic",
+            "url_github": "#",
+            "url_deployed": "#",
+            "img_src": "/friendship_is_magic.png",
+            "description": "AI-powered & gamified platform for keeping in touch with your friends - like a mix between a CRM & social media.",
+            "tech_stack": "Python, Langchain/Langgraph, idk yet????"
+        },
         {
             "title": "Lecture at the Beach Conference API",
             "url_github": "https://github.com/cameronsweeney/",

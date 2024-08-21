@@ -82,20 +82,6 @@ const NavLinks = () => {
                 img_src="/icons/github.svg"
                 img_alt="Github"
               />
-              <LinkButton
-                id="blog"
-                url="/blog"
-                img_src="/icons/blog.svg"
-                img_alt="Blog"
-                title="blog"
-              />
-              <LinkButton
-                id="portfolio"
-                url="/portfolio"
-                img_src="/icons/portfolio.svg"
-                img_alt="Portfolio"
-                title="portfolio"
-              />
             </div>
         </div>
     );
@@ -126,9 +112,7 @@ export default function Home() {
 
               <p>Recently, I've been diving into the latest AI technologies to make software development faster and more efficient. My work mainly involves ML Ops and using tools like <strong>AutoGen</strong>, <strong>LM Studio</strong>, and <strong>Oobabooga</strong> to harness the power of <strong>ChatGPT</strong> and open-source language models for tackling complex challenges. I'm actively engaged in <strong>prompt engineering</strong> and agent <strong>swarm architecture</strong> research, with my current focus on the automated generation of non-trivial, production-grade software. My experience teaching math and language helps me craft specific and clear prompts for language models, and getting a bunch of AI agents to work well together isn't too different from managing a classroom!</p>
 
-              <p>My project experience includes building RESTful APIs with <strong>Python</strong> and <strong>FastAPI</strong>, <strong>Django-REST-Framework</strong>, and <strong>Ruby on Rails</strong>, as well as <strong>PostgreSQL</strong> and <strong>SQLite</strong> databases. I also have experience building front-ends with <strong>JavaScript/Typescript</strong>, <strong>React</strong>, <strong>Redux</strong>, and <strong>Next.js</strong>. Check out some of my recent work on my <Link href="/portfolio">portfolio page</Link>!</p>
-              
-              <p>Over the last two years I've built many web servers and front-ends, and I've been focusing on keeping up with the rapidly advancing AI and ML space to supercharge my development speed. I've also kept up with the rapid pace of development in <strong>Prompt Engineering</strong> and <strong>Large Language Models</strong>, by getting involved in several interesting projects with folks from <Link href="https://themultiverse.school/">The Multiverse School</Link>, such as the Life Gamification project (gamified project management & executive function tools), TreeOfAttacks (automated hacking), and Friendship Is Magic (AI-powered & gamified platform for keeping in touch with your friends).</p>
+              <p>My project experience includes building RESTful APIs with <strong>Python</strong> and <strong>FastAPI</strong>, <strong>Django-REST-Framework</strong>, and <strong>Ruby on Rails</strong>, as well as <strong>PostgreSQL</strong> and <strong>SQLite</strong> databases. I also have experience building front-ends with <strong>JavaScript/Typescript</strong>, <strong>React</strong>, <strong>Redux</strong>, and <strong>Next.js</strong>. Check out some of my recent work on my <Link href="https://github.com/cameronsweeney/">Github</Link>!</p>
             </div>
           </div>
         </div>
